@@ -1,0 +1,110 @@
+
+Registration (WPC)
+Section
+Information/question
+Keterangan
+Team Data
+Notes:
+If applying for PDEC, the team name has to differ from the product's name.
+The team name is only allowed to consist of latin letters and numbers, and does not contain symbols.
+Team name must not be offensive to any ethnicity, religion, race, and/or intergroup relations. Disobeyment to this rule will result in immediate disqualification.
+
+
+Team name
+Isian singkat
+Nation of origin
+Isian singkat
+University name
+Isian singkat
+Team Leader 
+Full name
+Isian singkat
+Sex
+Multiple choice:
+Male
+Female
+Major
+Isian singkat
+Batch
+Desc: Enrollment year. Example: 2023
+Isian singkat
+Active phone number
+Desc: Include country code. Example (Indonesia): +62xxxxxxxxxxx
+Isian singkat, validasi nomor
+Email
+Isian singkat, validasi email
+Twibbon link
+Link
+First Member
+Full name
+Isian singkat
+Sex
+Multiple choice:
+Male
+Female
+Major
+Isian singkat
+Batch
+Desc: Enrollment year. Example: 2023
+Isian singkat
+Active phone number
+Desc: Include country code.
+Isian singkat, validasi nomor
+Email
+Isian singkat, validasi email
+Twibbon link
+Link
+Second Member
+Full name
+Isian singkat
+Sex
+Multiple choice:
+Male
+Female
+Major
+Isian singkat
+Batch
+Desc: Enrollment year. Example: 2023
+Isian singkat
+Active phone number
+Desc: Include country code.
+Isian singkat, validasi nomor
+Email
+Isian singkat, validasi email
+Twibbon link
+Link
+Attachments
+Consisting of:
+A scan of each member's student ID card
+Proof of poster repost by each member
+Screenshot of each member's participation twibbon
+Statement of Originality 
+
+
+Student ID card
+Desc: Scan each member's ID card, compile into single file
+File upload
+Poster repost
+Desc: Screenshot each member's repost, compile into single file
+File upload
+Twibbon
+Desc: Screenshot each member's twibbon, compile into single file
+File upload
+Statement of Originality
+Desc: Attach filled statement from template
+File upload
+Additional Info
+How did you know about IGNITE?
+Multiple choice
+Social media
+Campus announcement
+Friends/word of mouth
+Lecturer/faculty recommendation
+Others
+Agreement
+Checkbox:
+Agrees to comply with the rules and guidelines of IGNITE 2026.
+Confirms that all the information you provided is accurate.
+Accepts full responsibility, including receiving consequences if information provided is untrue.
+Payment/webinar proof
+File upload

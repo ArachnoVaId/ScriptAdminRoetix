@@ -1,0 +1,23 @@
+
+Abstract Submission (PDEC)
+Section
+Information/question
+Keterangan
+Team information
+
+Team name
+Isian singkat
+
+Team leader's full name
+Isian singkat
+
+Team leader's email
+Isian singkat
+
+Team leader's active phone number
+Isian singkat, validasi nomor
+
+Abstract submission
+
+Abstract
+File upload

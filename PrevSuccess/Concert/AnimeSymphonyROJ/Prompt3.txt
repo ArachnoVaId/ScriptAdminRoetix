@@ -1,0 +1,12 @@
+nicee, selanjutnya step 3 untuk harga:
+tetap pada halaman https://dev-admin.roetix.com/roetix-events/[slug]/edit
+1. pada section dibawah
+"Pricing (IDR)
+Price per category × timeline phase."
+
+2. fokus pada timeline pertama "Tes 1" masukan
+1	Kioku	Rp100,000.00
+2	Kizuna	Rp110,000.00
+3	Tomodachi	Rp125,000.00
+4	Nakama	Rp135,000.00
+

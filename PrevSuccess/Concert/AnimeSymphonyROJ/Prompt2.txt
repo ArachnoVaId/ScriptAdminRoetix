@@ -1,0 +1,110 @@
+Selanjutnya saat event sudah sebelumnya disetup, baru bisa set kategori
+1. access https://dev-admin.roetix.com/roetix-events/[slug]/edit contoh https://dev-admin.roetix.com/roetix-events/6a214a85a053c4180c05ce44/edit
+2. turun ke section "Ticket Tiers" bagian "Add Tier"
+3. Contoh Input
+- Tier Name: Kioku Timur 
+- Max Capacity: 832
+- Sales Quota: 512
+- Color: #93C47D
+...
+
+buatlah untuk:
+No	Kategori		Max Capacity	Sales Quota	Color
+1	Kioku	Timur	832	512	#93C47D
+2	Kioku	Barat	690	370	#93C47D
+3	Kizuna	Timur	242	167	#6D9EEB
+4	Kizuna	Barat	242	167	#6D9EEB
+5	Tomodachi	Utara	1075	880	#FFD966
+6	Tomodachi	Selatan	1110	915	#FFD966
+7	Nakama	Utara	362	272	#CC0000
+8	Nakama	Selatan	362	272	#CC0000
+
+4. Lalu ke  bagian Terms & Policy
+- Terms & Conditions:
+<ol>
+    <li>Untuk batas waktu pembayaran maksimal 3 jam. Jika melebihi jangka waktu tersebut, maka pesanan akan otomatis dibatalkan dan silakan melakukan pemesanan ulang.</li>
+
+    <li>Entry Pass yang valid adalah yang dibeli melalui platform Roetix.</li>
+
+    <li>Satu Entry Pass berlaku untuk satu orang.</li>
+
+    <li>Panitia dan Promotor tidak bertanggung jawab serta tidak memberikan penggantian kerugian atas pembelian tiket acara melalui calo, tempat, kanal, platform, atau pihak yang bukan mitra resmi penjualan tiket Anime in Symphony.</li>
+
+    <li>Tiket yang hilang atau dicuri tidak akan diganti atau diterbitkan ulang meskipun memiliki bukti pembelian. Tiket merupakan tanggung jawab pembeli.</li>
+
+    <li>Panitia acara, Promotor, dan Pengisi Acara tidak bertanggung jawab atas biaya transportasi maupun akomodasi yang telah dikeluarkan penonton apabila acara dibatalkan atau dipindahkan ke hari dan/atau waktu lain.</li>
+
+    <li>Dalam keadaan kahar seperti bencana alam, kerusuhan, perang, wabah, dan keadaan darurat lainnya yang diumumkan secara resmi oleh Pemerintah, Panitia/Penyelenggara/Promotor berhak membatalkan dan/atau mengubah waktu acara maupun tata letak tempat tanpa pemberitahuan sebelumnya.</li>
+
+    <li>Panitia/Penyelenggara/Promotor berhak merevisi waktu acara, tata letak tempat, dan kapasitas penonton tanpa pemberitahuan sebelumnya.</li>
+
+    <li>Jika acara dibatalkan, Promotor akan mengembalikan dana pembelian tiket dalam jangka waktu yang akan diinformasikan lebih lanjut. Pengembalian dana dapat dikenakan potongan biaya bank, biaya administrasi, dan biaya lain yang timbul dalam proses transfer dana kepada pelanggan.</li>
+
+    <li>Panitia acara, penanggung jawab tempat acara, Promotor, dan Pengisi Acara tidak bertanggung jawab atas kehilangan barang pribadi maupun kejadian yang mengakibatkan cedera selama acara berlangsung.</li>
+
+    <li>Harap membawa kartu identitas asli dan e-Ticket dari Roetix saat melakukan penukaran tiket.</li>
+
+    <li>Kami menyarankan para penonton menggunakan transportasi online saat datang ke GOR UNY.</li>
+
+    <li>
+        Promotor berhak untuk:
+        <ul>
+            <li>Melarang penonton masuk jika Entry Pass telah digunakan oleh orang lain.</li>
+            <li>Melarang penonton masuk ke area GOR UNY jika Entry Pass yang digunakan tidak valid.</li>
+            <li>Memproses atau mengajukan tindakan hukum, baik perdata maupun pidana, terhadap pengunjung yang memperoleh Entry Pass secara tidak sah, termasuk pemalsuan, penggandaan, atau perolehan Entry Pass yang tidak sesuai prosedur.</li>
+            <li>Mengeluarkan pengunjung dari area GOR UNY apabila tidak mematuhi protokol kesehatan yang berlaku.</li>
+        </ul>
+    </li>
+
+    <li>
+        Barang yang diperbolehkan dibawa ke dalam venue:
+        <ul>
+            <li>Kartu identitas dan uang pribadi.</li>
+            <li>Bukti tiket atau tanda masuk.</li>
+            <li>Masker dan hand sanitizer.</li>
+            <li>Obat-obatan pribadi.</li>
+            <li>Jas hujan.</li>
+            <li>Handphone atau perangkat elektronik lainnya.</li>
+        </ul>
+    </li>
+
+    <li>
+        Barang yang tidak diperbolehkan dibawa ke dalam GOR UNY:
+        <ul>
+            <li>Makanan dan minuman dari luar.</li>
+            <li>Kamera profesional seperti Drone, SLR, dan DSLR.</li>
+            <li>Tongsis atau selfie stick.</li>
+            <li>Minuman beralkohol, obat-obatan terlarang, psikotropika, atau barang yang mengandung zat berbahaya lainnya.</li>
+            <li>Senjata tajam, senjata api, bahan peledak, dan benda lain yang dilarang oleh peraturan perundang-undangan yang berlaku.</li>
+            <li>Cairan dan benda yang mudah terbakar.</li>
+            <li>Tas atau ransel berukuran besar.</li>
+            <li>Laser dan pointer.</li>
+            <li>Rokok, vape, rokok elektrik, dan sejenisnya.</li>
+            <li>Barang yang berbahaya bagi diri sendiri maupun orang lain meskipun tidak disebutkan secara eksplisit pada daftar di atas.</li>
+        </ul>
+    </li>
+
+    <li>Pihak Promotor/Penyelenggara berhak mengambil, menyita, dan tidak mengembalikan barang terlarang yang ditemukan saat pemeriksaan barang.</li>
+
+    <li>Dilarang merokok di dalam area GOR UNY.</li>
+
+    <li>Dilarang membuat kerusuhan dalam situasi apa pun di dalam area GOR UNY.</li>
+
+    <li><strong>Saya telah membaca dan memahami syarat dan ketentuan pembelian serta penggunaan Entry Pass di atas. Apabila terdapat perubahan aturan dari Promotor, informasi akan diumumkan melalui akun media sosial resmi Promotor. Dengan ini saya menyatakan setuju untuk terikat secara hukum dengan seluruh syarat dan ketentuan yang berlaku.</strong></li>
+</ol>
+
+- Privacy Policy
+<li>
+    <strong>Privasi Data dan Dokumentasi Acara</strong>
+    <ul>
+        <li>
+            Dengan membeli tiket Anime in Symphony, pembeli menyetujui bahwa data pribadi yang diserahkan, termasuk namun tidak terbatas pada nama lengkap, alamat email, nomor telepon, dan data identitas, akan dikumpulkan dan disimpan oleh platform tiket (Roetix) dan pihak penyelenggara (Rumah Orkestra Jogja) untuk keperluan verifikasi serta administrasi acara.
+        </li>
+        <li>
+            Penyelenggara menjamin bahwa data pribadi pembeli tidak akan diperjualbelikan kepada pihak ketiga. Data hanya akan digunakan untuk komunikasi terkait acara, pengiriman e-Ticket, serta pemberitahuan keadaan darurat yang berkaitan dengan penyelenggaraan acara.
+        </li>
+        <li>
+            Dengan menghadiri acara di GOR UNY, penonton memberikan persetujuan kepada penyelenggara untuk mengambil foto, video, maupun rekaman suara selama acara berlangsung. Penyelenggara berhak menggunakan materi dokumentasi tersebut yang dapat menampilkan wajah, suara, atau citra penonton untuk keperluan promosi, publikasi, dokumentasi, dan kegiatan komersial lainnya di masa mendatang tanpa kewajiban memberikan kompensasi dalam bentuk apa pun kepada penonton.
+        </li>
+    </ul>
+</li>

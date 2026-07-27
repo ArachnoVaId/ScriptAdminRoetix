@@ -1,0 +1,44 @@
+
+Registration (ESC PNM)
+Section
+Information/question
+Keterangan
+Team Data
+
+NAMA TIM
+Isian singkat
+ASAL PERGURUAN TINGGI
+Isian singkat
+Ketua Tim
+
+NAMA KETUA TIM
+Isian singkat
+EMAIL KETUA TIM
+Isian singkat, validasi email
+NOMOR WhatsApp KETUA TIM
+Isian singkat, validasi nomor
+Anggota Tim
+
+NAMA ANGGOTA TIM
+Isian singkat
+NOMOR WhatsApp ANGGOTA
+Isian singkat, validasi nomor
+Attachments
+
+UPLOAD FOTO KTM KETUA DAN ANGGOTA TIM
+Desc: Scan/photo of each member's student ID card, compile into single file
+File upload
+UPLOAD BUKTI PENGUNGGAHAN TWIBBON KETUA DAN ANGGOTA TIM
+Desc: Screenshot each member's twibbon upload, compile into single file
+File upload
+UPLOAD BUKTI FOLLOW AKUN INSTAGRAM HIMATEKLIS (KETUA DAN ANGGOTA TIM)
+Desc: Screenshot each member's Instagram follow proof, compile into single file
+File upload
+UPLOAD BUKTI PEMBAYARAN
+Desc: Kirim bukti pembayaran pada nomor yang tertera pada guidebook
+File upload
+Agreement
+
+DATA YANG SAYA ISI ADALAH BENAR DAN DAPAT DIPERTANGGUNGJAWABKAN!
+Checkbox:
+Saya telah membaca dan menyetujui pernyataan diatas
