@@ -11,7 +11,7 @@ var FIELDS = [
   { key: 'TeamName_extended', label: 'Team name', type: 'text', required: true },
   { key: 'LeaderInstitution_extended', label: 'Institution (Team Leader)', type: 'text', required: true },
   // Team Leader
-  { key: 'LeaderName_extended', label: 'Leader Name', type: 'text_area', required: true,
+  { key: 'LeaderName_extended', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
   { key: 'LeaderPhoneNumber_extended', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
   { key: 'LeaderEmail_extended', label: 'Leader Email', type: 'email', required: true },
@@ -26,6 +26,8 @@ var FIELDS = [
   { key: 'TwibbonUpload_extended', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
   { key: 'TagProof_extended', label: 'Bukti tag 5 akun instagram lain', type: 'file', required: true },
   { key: 'ShareProof_extended', label: 'Bukti share poster MATRIX ke 3 grup Whatsapp/Line berbeda', type: 'file', required: true },
+  { key: 'PaymentProof_extended', label: 'Setelah ini, pendaftar akan melakukan pembayaran QRIS dan melakukan screenshot bukti pembayaran', type: 'multiple_choice', required: true,
+    options: ['Setuju'] }
 ];
 
 var SECTION_MAP = [

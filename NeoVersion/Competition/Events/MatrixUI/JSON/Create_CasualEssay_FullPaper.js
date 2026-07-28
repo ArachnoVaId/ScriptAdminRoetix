@@ -1,41 +1,34 @@
-// MATRIX UI - Casual Essay Normal Phase & Add 15 Fields
+// MATRIX UI - Casual Essay Full Paper Phase & Add 9 Fields
 // 1. Navigate to the Essay Competition timeline page
 // 2. Click "Add Phase" button FIRST
 // 3. Wait for the new phase form to appear
 // 4. Paste this script in browser console
-// 5. Script fills phase details + adds 15 fields
+// 5. Script fills phase details + adds 9 fields
 // 6. Click "Save Timeline" to save
-
 
 var FIELDS = [
   // Team Data
-  { key: 'TeamName_normal', label: 'Team name', type: 'text', required: true },
-  { key: 'LeaderInstitution_normal', label: 'Institution (Team Leader)', type: 'text', required: true },
+  { key: 'TeamName_fullpaper', label: 'Team name', type: 'text', required: true },
+  { key: 'LeaderInstitution_fullpaper', label: 'Institution (Team Leader)', type: 'text', required: true },
   // Team Leader
-  { key: 'LeaderName_normal', label: 'Leader Name', type: 'text', required: true,
+  { key: 'LeaderName_fullpaper', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
-  { key: 'LeaderPhoneNumber_normal', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
-  { key: 'LeaderEmail_normal', label: 'Leader Email', type: 'email', required: true },
+  { key: 'LeaderPhoneNumber_fullpaper', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
   // Members
-  { key: 'Member1Name_normal', label: 'Member 1 Name', type: 'text', required: true },
-  { key: 'Member1PhoneNumber_normal', label: 'Member 1 Contact', type: 'phone', required: true },
-  { key: 'Member2Name_normal', label: 'Member 2 Name', type: 'text', required: true },
-  { key: 'Member2PhoneNumber_normal', label: 'Member 2 Contact', type: 'phone', required: true },
-  // Attachments
-  { key: 'StudentCard_normal', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
-  { key: 'InstagramFollow_normal', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
-  { key: 'TwibbonUpload_normal', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
-  { key: 'TagProof_normal', label: 'Bukti tag 5 akun instagram lain', type: 'file', required: true },
-  { key: 'ShareProof_normal', label: 'Bukti share poster MATRIX ke 3 grup Whatsapp/Line berbeda', type: 'file', required: true },
-  { key: 'PaymentProof_normal', label: 'Setelah ini, pendaftar akan melakukan pembayaran QRIS dan melakukan screenshot bukti pembayaran', type: 'multiple_choice', required: true,
+  { key: 'Member1Name_fullpaper', label: 'Member 1 Name', type: 'text', required: true },
+  { key: 'Member1PhoneNumber_fullpaper', label: 'Member 1 Contact', type: 'phone', required: true },
+  { key: 'Member2Name_fullpaper', label: 'Member 2 Name', type: 'text', required: true },
+  { key: 'Member2PhoneNumber_fullpaper', label: 'Member 2 Contact', type: 'phone', required: true },
+  // Payment
+  { key: 'PaymentProof_fullpaper', label: 'Setelah ini, pendaftar akan melakukan pembayaran QRIS dan melakukan screenshot bukti pembayaran', type: 'multiple_choice', required: true,
     options: ['Setuju'] }
 ];
 
 var SECTION_MAP = [
-  1,1,1,1,1,
+  1,1,1,1,
   2,2,
   3,3,
-  4,4,4,4,4,4
+  4
 ];
 
 var PHASE_INDEX = Array.from(document.querySelectorAll('[name^="timelines."]'))
@@ -101,17 +94,17 @@ function addChoicesToField(container, choices) {
 }
 
 (function run() {
-  console.log('%c═══ MATRIX UI - Casual Essay Normal Phase + ' + FIELDS.length + ' Fields ═══', 'color:#6366f1;font-weight:bold');
+  console.log('%c═══ MATRIX UI - Casual Essay Full Paper Phase + ' + FIELDS.length + ' Fields ═══', 'color:#6366f1;font-weight:bold');
   console.log('Phase index: ' + PHASE_INDEX);
 
-  fill(byName('timelines.' + PHASE_INDEX + '.name'), 'Casual Essay Normal');
-  console.log('Phase Name -> Casual Essay Normal');
+  fill(byName('timelines.' + PHASE_INDEX + '.name'), 'Casual Essay Full Paper');
+  console.log('Phase Name -> Casual Essay Full Paper');
 
-  fill(byName('timelines.' + PHASE_INDEX + '.startDate'), '2026-08-20');
-  console.log('Start Date -> 2026-08-20');
+  fill(byName('timelines.' + PHASE_INDEX + '.startDate'), '2026-09-17');
+  console.log('Start Date -> 2026-09-17');
 
-  fill(byName('timelines.' + PHASE_INDEX + '.endDate'), '2026-09-08');
-  console.log('End Date -> 2026-09-08');
+  fill(byName('timelines.' + PHASE_INDEX + '.endDate'), '2026-10-07');
+  console.log('End Date -> 2026-10-07');
 
   var allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
   var phaseCheckboxes = [];
