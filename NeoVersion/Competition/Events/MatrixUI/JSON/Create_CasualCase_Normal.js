@@ -1,9 +1,9 @@
-// MATRIX UI - Casual Case Study Normal Phase & Add 9 Fields
+// MATRIX UI - Casual Case Study Normal Phase & Add 15 Fields
 // 1. Navigate to the Case Study Competition timeline page
 // 2. Click "Add Phase" button FIRST
 // 3. Wait for the new phase form to appear
 // 4. Paste this script in browser console
-// 5. Script fills phase details + adds 9 fields
+// 5. Script fills phase details + adds 14 fields
 // 6. Click "Save Timeline" to save
 
 var FIELDS = [
@@ -11,24 +11,30 @@ var FIELDS = [
   { key: 'TeamName_normal', label: 'Team name', type: 'text', required: true },
   { key: 'LeaderInstitution_normal', label: 'Institution (Team Leader)', type: 'text', required: true },
   // Team Leader
-  { key: 'LeaderData_normal', label: 'Team Leader name and Whatsapp Contact', type: 'text_area', required: true,
+  { key: 'LeaderName_normal', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
+  { key: 'LeaderPhoneNumber_normal', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
+  { key: 'LeaderEmail_normal', label: 'Leader Email', type: 'email', required: true },
   // Members
-  { key: 'MembersData_normal', label: 'Members name and Whatsapp Contact', type: 'text_area', required: true,
-    notes: 'Format:\n1. name/contact\n2. name/contact' },
+  { key: 'Member1Name_normal', label: 'Member 1 Name', type: 'text', required: true },
+  { key: 'Member1PhoneNumber_normal', label: 'Member 1 Contact', type: 'phone', required: true },
+  { key: 'Member2Name_normal', label: 'Member 2 Name', type: 'text', required: true },
+  { key: 'Member2PhoneNumber_normal', label: 'Member 2 Contact', type: 'phone', required: true },
   // Attachments
-  { key: 'StudentCard_normal', label: 'Bukti Kartu Tanda Mahasiswa (KTM) setiap peserta', type: 'file', required: true },
+  { key: 'StudentCard_normal', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
   { key: 'InstagramFollow_normal', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
   { key: 'TwibbonUpload_normal', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
   { key: 'TagProof_normal', label: 'Bukti tag 5 akun instagram lain', type: 'file', required: true },
-  { key: 'ShareProof_normal', label: 'Bukti share poster MATRIX ke 3 grup Whatsapp/Line berbeda', type: 'file', required: true }
+  { key: 'ShareProof_normal', label: 'Bukti share poster MATRIX ke 3 grup Whatsapp/Line berbeda', type: 'file', required: true },
+  { key: 'PaymentProof_normal', label: 'Setelah ini, pendaftar akan melakukan pembayaran QRIS dan melakukan screenshot bukti pembayaran', type: 'multiple_choice', required: true,
+    options: ['Setuju'] }
 ];
 
 var SECTION_MAP = [
-  1,1,
-  2,
-  3,
-  4,4,4,4,4
+  1,1,1,1,1,
+  2,2,
+  3,3,
+  4,4,4,4,4,4
 ];
 
 var PHASE_INDEX = Array.from(document.querySelectorAll('[name^="timelines."]'))

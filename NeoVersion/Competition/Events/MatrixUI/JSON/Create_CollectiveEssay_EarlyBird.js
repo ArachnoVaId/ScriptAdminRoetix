@@ -1,4 +1,4 @@
-// MATRIX UI - Collective Essay Early Bird Phase & Add 34 Fields
+// MATRIX UI - Collective Essay Early Bird Phase & Add 37 Fields
 // 1. Navigate to the Essay Competition timeline page
 // 2. Click "Add Phase" button FIRST
 // 3. Wait for the new phase form to appear
@@ -13,6 +13,7 @@ var FIELDS = [
   { key: 'Team1LeaderName_earlybird', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
   { key: 'Team1LeaderPhoneNumber_earlybird', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
+  { key: 'Team1LeaderEmail_earlybird', label: 'Leader Email', type: 'email', required: true },
   { key: 'Team1Member1Name_earlybird', label: 'Member 1 Name', type: 'text', required: true },
   { key: 'Team1Member1PhoneNumber_earlybird', label: 'Member 1 Contact', type: 'phone', required: true },
   { key: 'Team1Member2Name_earlybird', label: 'Member 2 Name', type: 'text', required: true },
@@ -26,6 +27,7 @@ var FIELDS = [
   { key: 'Team2LeaderName_earlybird', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
   { key: 'Team2LeaderPhoneNumber_earlybird', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
+  { key: 'Team2LeaderEmail_earlybird', label: 'Leader Email', type: 'email', required: true },
   { key: 'Team2Member1Name_earlybird', label: 'Member 1 Name', type: 'text', required: true },
   { key: 'Team2Member1PhoneNumber_earlybird', label: 'Member 1 Contact', type: 'phone', required: true },
   { key: 'Team2Member2Name_earlybird', label: 'Member 2 Name', type: 'text', required: true },
@@ -39,6 +41,7 @@ var FIELDS = [
   { key: 'Team3LeaderName_earlybird', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
   { key: 'Team3LeaderPhoneNumber_earlybird', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
+  { key: 'Team3LeaderEmail_earlybird', label: 'Leader Email', type: 'email', required: true },
   { key: 'Team3Member1Name_earlybird', label: 'Member 1 Name', type: 'text', required: true },
   { key: 'Team3Member1PhoneNumber_earlybird', label: 'Member 1 Contact', type: 'phone', required: true },
   { key: 'Team3Member2Name_earlybird', label: 'Member 2 Name', type: 'text', required: true },
@@ -52,9 +55,9 @@ var FIELDS = [
 ];
 
 var SECTION_MAP = [
-  1,1,1,1,1,1,1,1,1,1,1,
-  2,2,2,2,2,2,2,2,2,2,2,
-  3,3,3,3,3,3,3,3,3,3,3,
+  1,1,1,1,1,1,1,1,1,1,1,1,
+  2,2,2,2,2,2,2,2,2,2,2,2,
+  3,3,3,3,3,3,3,3,3,3,3,3,
   4
 ];
 
