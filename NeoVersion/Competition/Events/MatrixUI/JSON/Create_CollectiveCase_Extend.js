@@ -1,5 +1,5 @@
-// MATRIX UI - Collective Essay Normal Phase & Add 37 Fields
-// 1. Navigate to the Essay Competition timeline page
+// MATRIX UI - Collective Case Study Extend Phase & Add 37 Fields
+// 1. Navigate to the Case Study Competition timeline page
 // 2. Click "Add Phase" button FIRST
 // 3. Wait for the new phase form to appear
 // 4. Paste this script in browser console
@@ -8,49 +8,49 @@
 
 var FIELDS = [
   // Tim 1
-  { key: 'Team1Name_normal', label: 'Team name', type: 'text', required: true },
-  { key: 'Team1LeaderInstitution_normal', label: 'Institution (Team Leader)', type: 'text', required: true },
-  { key: 'Team1LeaderName_normal', label: 'Leader Name', type: 'text', required: true,
+  { key: 'Team1Name_extended', label: 'Team name', type: 'text', required: true },
+  { key: 'Team1LeaderInstitution_extended', label: 'Institution (Team Leader)', type: 'text', required: true },
+  { key: 'Team1LeaderName_extended', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
-  { key: 'Team1LeaderPhoneNumber_normal', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
-  { key: 'Team1LeaderEmail_normal', label: 'Leader Email', type: 'email', required: true },
-  { key: 'Team1Member1Name_normal', label: 'Member 1 Name', type: 'text', required: true },
-  { key: 'Team1Member1PhoneNumber_normal', label: 'Member 1 Contact', type: 'phone', required: true },
-  { key: 'Team1Member2Name_normal', label: 'Member 2 Name', type: 'text', required: true },
-  { key: 'Team1Member2PhoneNumber_normal', label: 'Member 2 Contact', type: 'phone', required: true },
-  { key: 'Team1StudentCard_normal', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
-  { key: 'Team1InstagramFollow_normal', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
-  { key: 'Team1TwibbonUpload_normal', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
+  { key: 'Team1LeaderPhoneNumber_extended', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
+  { key: 'Team1LeaderEmail_extended', label: 'Leader Email', type: 'email', required: true },
+  { key: 'Team1Member1Name_extended', label: 'Member 1 Name', type: 'text', required: true },
+  { key: 'Team1Member1PhoneNumber_extended', label: 'Member 1 Contact', type: 'phone', required: true },
+  { key: 'Team1Member2Name_extended', label: 'Member 2 Name', type: 'text', required: true },
+  { key: 'Team1Member2PhoneNumber_extended', label: 'Member 2 Contact', type: 'phone', required: true },
+  { key: 'Team1StudentCard_extended', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
+  { key: 'Team1InstagramFollow_extended', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
+  { key: 'Team1TwibbonUpload_extended', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
   // Tim 2
-  { key: 'Team2Name_normal', label: 'Team name', type: 'text', required: true },
-  { key: 'Team2LeaderInstitution_normal', label: 'Institution (Team Leader)', type: 'text', required: true },
-  { key: 'Team2LeaderName_normal', label: 'Leader Name', type: 'text', required: true,
+  { key: 'Team2Name_extended', label: 'Team name', type: 'text', required: true },
+  { key: 'Team2LeaderInstitution_extended', label: 'Institution (Team Leader)', type: 'text', required: true },
+  { key: 'Team2LeaderName_extended', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
-  { key: 'Team2LeaderPhoneNumber_normal', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
-  { key: 'Team2LeaderEmail_normal', label: 'Leader Email', type: 'email', required: true },
-  { key: 'Team2Member1Name_normal', label: 'Member 1 Name', type: 'text', required: true },
-  { key: 'Team2Member1PhoneNumber_normal', label: 'Member 1 Contact', type: 'phone', required: true },
-  { key: 'Team2Member2Name_normal', label: 'Member 2 Name', type: 'text', required: true },
-  { key: 'Team2Member2PhoneNumber_normal', label: 'Member 2 Contact', type: 'phone', required: true },
-  { key: 'Team2StudentCard_normal', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
-  { key: 'Team2InstagramFollow_normal', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
-  { key: 'Team2TwibbonUpload_normal', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
+  { key: 'Team2LeaderPhoneNumber_extended', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
+  { key: 'Team2LeaderEmail_extended', label: 'Leader Email', type: 'email', required: true },
+  { key: 'Team2Member1Name_extended', label: 'Member 1 Name', type: 'text', required: true },
+  { key: 'Team2Member1PhoneNumber_extended', label: 'Member 1 Contact', type: 'phone', required: true },
+  { key: 'Team2Member2Name_extended', label: 'Member 2 Name', type: 'text', required: true },
+  { key: 'Team2Member2PhoneNumber_extended', label: 'Member 2 Contact', type: 'phone', required: true },
+  { key: 'Team2StudentCard_extended', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
+  { key: 'Team2InstagramFollow_extended', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
+  { key: 'Team2TwibbonUpload_extended', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
   // Tim 3
-  { key: 'Team3Name_normal', label: 'Team name', type: 'text', required: true },
-  { key: 'Team3LeaderInstitution_normal', label: 'Institution (Team Leader)', type: 'text', required: true },
-  { key: 'Team3LeaderName_normal', label: 'Leader Name', type: 'text', required: true,
+  { key: 'Team3Name_extended', label: 'Team name', type: 'text', required: true },
+  { key: 'Team3LeaderInstitution_extended', label: 'Institution (Team Leader)', type: 'text', required: true },
+  { key: 'Team3LeaderName_extended', label: 'Leader Name', type: 'text', required: true,
     notes: 'Format: name/contact' },
-  { key: 'Team3LeaderPhoneNumber_normal', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
-  { key: 'Team3LeaderEmail_normal', label: 'Leader Email', type: 'email', required: true },
-  { key: 'Team3Member1Name_normal', label: 'Member 1 Name', type: 'text', required: true },
-  { key: 'Team3Member1PhoneNumber_normal', label: 'Member 1 Contact', type: 'phone', required: true },
-  { key: 'Team3Member2Name_normal', label: 'Member 2 Name', type: 'text', required: true },
-  { key: 'Team3Member2PhoneNumber_normal', label: 'Member 2 Contact', type: 'phone', required: true },
-  { key: 'Team3StudentCard_normal', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
-  { key: 'Team3InstagramFollow_normal', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
-  { key: 'Team3TwibbonUpload_normal', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
+  { key: 'Team3LeaderPhoneNumber_extended', label: 'Leader Whatsapp Contact', type: 'phone', required: true },
+  { key: 'Team3LeaderEmail_extended', label: 'Leader Email', type: 'email', required: true },
+  { key: 'Team3Member1Name_extended', label: 'Member 1 Name', type: 'text', required: true },
+  { key: 'Team3Member1PhoneNumber_extended', label: 'Member 1 Contact', type: 'phone', required: true },
+  { key: 'Team3Member2Name_extended', label: 'Member 2 Name', type: 'text', required: true },
+  { key: 'Team3Member2PhoneNumber_extended', label: 'Member 2 Contact', type: 'phone', required: true },
+  { key: 'Team3StudentCard_extended', label: 'Bukti Kartu Pelajar setiap peserta', type: 'file', required: true },
+  { key: 'Team3InstagramFollow_extended', label: 'Bukti follow instagram @nams.ftui dan @matrixui.2026', type: 'file', required: true },
+  { key: 'Team3TwibbonUpload_extended', label: 'Bukti upload Twibbon di instagram pribadi', type: 'file', required: true },
   // Payment
-  { key: 'PaymentProof_normal', label: 'Setelah ini, pendaftar akan melakukan pembayaran QRIS dan melakukan screenshot bukti pembayaran', type: 'multiple_choice', required: true,
+  { key: 'PaymentProof_extended', label: 'Setelah ini, pendaftar akan melakukan pembayaran QRIS dan melakukan screenshot bukti pembayaran', type: 'multiple_choice', required: true,
     options: ['Setuju'] }
 ];
 
@@ -124,17 +124,17 @@ function addChoicesToField(container, choices) {
 }
 
 (function run() {
-  console.log('%c═══ MATRIX UI - Collective Essay Normal Phase + ' + FIELDS.length + ' Fields ═══', 'color:#6366f1;font-weight:bold');
+  console.log('%c═══ MATRIX UI - Collective Case Study Extend Phase + ' + FIELDS.length + ' Fields ═══', 'color:#6366f1;font-weight:bold');
   console.log('Phase index: ' + PHASE_INDEX);
 
-  fill(byName('timelines.' + PHASE_INDEX + '.name'), 'Collective Essay Normal');
-  console.log('Phase Name -> Collective Essay Normal');
+  fill(byName('timelines.' + PHASE_INDEX + '.name'), 'Collective Case Study Extend');
+  console.log('Phase Name -> Collective Case Study Extend');
 
-  fill(byName('timelines.' + PHASE_INDEX + '.startDate'), '2026-08-20');
-  console.log('Start Date -> 2026-08-20');
+  fill(byName('timelines.' + PHASE_INDEX + '.startDate'), '2026-09-09');
+  console.log('Start Date -> 2026-09-09');
 
-  fill(byName('timelines.' + PHASE_INDEX + '.endDate'), '2026-09-08');
-  console.log('End Date -> 2026-09-08');
+  fill(byName('timelines.' + PHASE_INDEX + '.endDate'), '2026-09-15');
+  console.log('End Date -> 2026-09-15');
 
   var allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
   var phaseCheckboxes = [];

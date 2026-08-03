@@ -1,5 +1,5 @@
-// MATRIX UI - Collective Essay Normal Phase & Add 37 Fields
-// 1. Navigate to the Essay Competition timeline page
+// MATRIX UI - Collective Case Study Normal Phase & Add 37 Fields
+// 1. Navigate to the Case Study Competition timeline page
 // 2. Click "Add Phase" button FIRST
 // 3. Wait for the new phase form to appear
 // 4. Paste this script in browser console
@@ -124,11 +124,11 @@ function addChoicesToField(container, choices) {
 }
 
 (function run() {
-  console.log('%c═══ MATRIX UI - Collective Essay Normal Phase + ' + FIELDS.length + ' Fields ═══', 'color:#6366f1;font-weight:bold');
+  console.log('%c═══ MATRIX UI - Collective Case Study Normal Phase + ' + FIELDS.length + ' Fields ═══', 'color:#6366f1;font-weight:bold');
   console.log('Phase index: ' + PHASE_INDEX);
 
-  fill(byName('timelines.' + PHASE_INDEX + '.name'), 'Collective Essay Normal');
-  console.log('Phase Name -> Collective Essay Normal');
+  fill(byName('timelines.' + PHASE_INDEX + '.name'), 'Collective Case Study Normal');
+  console.log('Phase Name -> Collective Case Study Normal');
 
   fill(byName('timelines.' + PHASE_INDEX + '.startDate'), '2026-08-20');
   console.log('Start Date -> 2026-08-20');
