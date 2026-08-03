@@ -1,0 +1,68 @@
+Mini Marketing Case
+ Nama Tim
+*
+
+Informasi Pribadi Ketua Tim (Anggota Pertama)
+Nama Ketua Tim (Anggota Pertama)
+*
+-
+Institusi
+Contoh: Universitas Indonesia
+*
+-
+Jurusan dan Angkatan
+Contoh: Manajemen 2025
+*
+-
+Email Ketua Tim (Anggota Pertama)
+*
+-
+Nomor WhatsApp Ketua Tim (Anggota Pertama)
+*
+-
+LINE ID Ketua Tim (Anggota Pertama)
+*
+-
+Informasi Pribadi Anggota Kedua
+Nama Anggota Kedua
+*
+-
+Institusi
+Contoh: Universitas Indonesia
+*
+-
+Jurusan dan Angkatan
+Contoh: Manajemen 2025
+*
+-
+Email Anggota Kedua
+*
+-
+Nomor WhatsApp Anggota Kedua
+*
+-
+LINE ID Anggota Kedua
+*
+-
+Informasi Pribadi Anggota Ketiga
+Nama Anggota Ketiga
+*
+-
+Institusi
+Contoh: Universitas Indonesia
+*
+-
+Jurusan dan Angkatan
+Contoh: Manajemen 2025
+*
+-
+Email Anggota Ketiga
+*
+-
+Nomor WhatsApp Anggota Ketiga
+*
+-
+LINE ID Anggota Ketiga
+*
+-
+(sisanya sama seperti MarketingPlan)
