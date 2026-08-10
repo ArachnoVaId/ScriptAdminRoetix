@@ -6,6 +6,7 @@
 > - `Jurusan dan Angkatan` adalah 1 field gabungan (bukan 2 field terpisah seperti di contoh IGNITE Major/Batch), sehingga dipetakan ke key `MajorBatch`.
 > - Section **Anggota Keempat** eksplisit ditandai "bersifat opsional" di RAW dan tidak ada tanda `*` pada field-fieldnya → seluruh field Member3 di bawah `required: false`, dan semua label diberi suffix `(opsional)`.
 > - Section **IMOTION Support Package** bersifat conditional/branching di Google Form asli (tergantung jawaban "Ya/Tidak" dan tim/individu), tapi export teks meratakan alurnya jadi linear. Pemetaan di bawah adalah interpretasi terbaik — **wajib diverifikasi manual terhadap form asli** sebelum dipakai ke JS.
+> - **REVISI (2026-08-03):** Judul form pendaftaran (nama fase/timeline) diubah jadi "Marketing Plan Competition Normal Registration" (dan "...Extend Registration" untuk timeline Extend). Beberapa label field diterjemahkan ke Inggris dengan format "(First/Second/Third/Fourth Member)". Section "How did you find out" dipisah dari Attachments jadi section tersendiri — total section sekarang 7 (bukan 6). Tidak ada mekanisme teknis untuk membatasi upload ke PDF-only di FIELDS schema kita — ditulis sebagai instruksi di Keterangan saja.
 
 ## Section 1: Team Data
 
@@ -18,33 +19,33 @@
 | # | Key | Label | Type | Required | Notes |
 |---|-----|-------|------|----------|-------|
 | 1 | LeaderFullName | Nama Ketua Tim (Anggota Pertama) | text | true | |
-| 2 | LeaderInstitution | Institusi | text | true | Contoh: Universitas Indonesia |
-| 3 | LeaderMajorBatch | Jurusan dan Angkatan | text | true | Contoh: Manajemen 2025 |
+| 2 | LeaderInstitution | Team Leader Institution (First Member) | text | true | Contoh: Universitas Indonesia |
+| 3 | LeaderMajorBatch | Team Leader Major and Batch (First Member) | text | true | Contoh: Manajemen 2025 |
 | 4 | LeaderEmail | Email Ketua Tim (Anggota Pertama) | email | true | |
-| 5 | LeaderPhoneNumber | Nomor WhatsApp Ketua Tim (Anggota Pertama) | phone | true | |
-| 6 | LeaderLineID | LINE ID Ketua Tim (Anggota Pertama) | text | true | |
+| 5 | LeaderPhoneNumber | Team Leader Whatsapp Number (First Member) | phone | true | |
+| 6 | LeaderLineID | Team Leader LINE ID (First Member) | text | true | |
 
 ## Section 2: Second Member (Anggota Kedua)
 
 | # | Key | Label | Type | Required | Notes |
 |---|-----|-------|------|----------|-------|
 | 1 | Member1FullName | Nama Anggota Kedua | text | true | |
-| 2 | Member1Institution | Institusi | text | true | Contoh: Universitas Indonesia |
-| 3 | Member1MajorBatch | Jurusan dan Angkatan | text | true | Contoh: Manajemen 2025 |
+| 2 | Member1Institution | Second Member Institution | text | true | Contoh: Universitas Indonesia |
+| 3 | Member1MajorBatch | Second Member Major and Batch | text | true | Contoh: Manajemen 2025 |
 | 4 | Member1Email | Email Anggota Kedua | email | true | |
 | 5 | Member1PhoneNumber | Nomor WhatsApp Anggota Kedua | phone | true | |
-| 6 | Member1LineID | LINE ID Anggota Kedua | text | true | |
+| 6 | Member1LineID | Second Member LINE ID | text | true | |
 
 ## Section 3: Third Member (Anggota Ketiga)
 
 | # | Key | Label | Type | Required | Notes |
 |---|-----|-------|------|----------|-------|
 | 1 | Member2FullName | Nama Anggota Ketiga | text | true | |
-| 2 | Member2Institution | Institusi | text | true | Contoh: Universitas Indonesia |
-| 3 | Member2MajorBatch | Jurusan dan Angkatan | text | true | Contoh: Manajemen 2025 |
+| 2 | Member2Institution | Third Member Institution | text | true | Contoh: Universitas Indonesia |
+| 3 | Member2MajorBatch | Third Member Major and Batch | text | true | Contoh: Manajemen 2025 |
 | 4 | Member2Email | Email Anggota Ketiga | email | true | |
 | 5 | Member2PhoneNumber | Nomor WhatsApp Anggota Ketiga | phone | true | |
-| 6 | Member2LineID | LINE ID Anggota Ketiga | text | true | |
+| 6 | Member2LineID | Third Member LINE ID | text | true | |
 
 ## Section 4: Fourth Member (Anggota Keempat — Optional)
 
@@ -53,37 +54,34 @@
 | # | Key | Label | Type | Required | Notes |
 |---|-----|-------|------|----------|-------|
 | 1 | Member3FullName | Nama Anggota Keempat (opsional) | text | false | |
-| 2 | Member3Institution | Institusi (opsional) | text | false | Contoh: Universitas Indonesia |
-| 3 | Member3MajorBatch | Jurusan dan Angkatan (opsional) | text | false | Contoh: Manajemen 2025 |
+| 2 | Member3Institution | Fourth Member Institution (opsional) | text | false | Contoh: Universitas Indonesia |
+| 3 | Member3MajorBatch | Fourth Member Major and Batch (opsional) | text | false | Contoh: Manajemen 2025 |
 | 4 | Member3Email | Email Anggota Keempat (opsional) | email | false | |
 | 5 | Member3PhoneNumber | Nomor WhatsApp Anggota Keempat (opsional) | phone | false | |
-| 6 | Member3LineID | LINE ID Anggota Keempat (opsional) | text | false | |
+| 6 | Member3LineID | Fourth Member LINE ID (opsional) | text | false | |
 
-## Section 5: Attachments & Info
-
-### Attachments
+## Section 5: Attachments
 
 | # | Key | Label | Type | Required | Notes |
 |---|-----|-------|------|----------|-------|
-| 1 | AdminProof | Bukti Kelengkapan Administrasi | file | true | Desc: Satu file berisi: (1) KTM seluruh anggota tim, (2) bukti follow IG @imotionfebui, (3) bukti follow TikTok @imotionfebui, (4) bukti follow X @imotionfebui, (5) bukti upload poster The 20th IMOTION di IG Story + tag @imotionfebui, (6) bukti upload Twibbon The 20th IMOTION di IG Feed. Akses poster & twibbon: https://bit.ly/ParticipantEssentialsThe20thIMOTION. Template compiled proof (CompiledProof20thIMOTION): https://docs.google.com/document/d/1Qv6xVp2H1TyXORJK2aaTtbcaxHV2u2fmCyQezcpMWa8/edit?tab=t.0 — WAJIB "Make a copy" dulu sebelum mengisi template. Nama file: (Team Name)_Registration The 20th IMOTION_Compiled Proof. Max 100 MB. |
+| 1 | AdminProof | Bukti Kelengkapan Administrasi | file | true | Please upload one file using the provided template. Make sure the file contains the following documents: 1. Student Identity Card (KTM) of all team members. 2. Proof of following the Instagram account @imotionfebui. 3. Proof of following the TikTok account @imotionfebui. 4. Proof of following the X (Twitter) account @imotionfebui. 5. Proof of uploading The 20th IMOTION poster to Instagram Story and tagging the account @imotionfebui. 6. Proof of uploading The 20th IMOTION Twibbon to Instagram Feed. Download the registration proof template through the following link: https://bit.ly/CompiledProof20thIMOTION. Please make a copy of the template first before filling it out. File name: (Team Name)_Registration The 20th IMOTION_Compiled Proof. The file must be in PDF format only. |
 
-### Additional Info
+## Section 6: Additional Info
+
+_(dipisah dari Attachments per revisi — sebelumnya tergabung di Section 5)_
 
 | # | Key | Label | Type | Required | Notes | Options |
 |---|-----|-------|------|----------|-------|---------|
 | 1 | InfoIMOTIONFrom | Bagaimana Anda mengetahui The 20th IMOTION? | multiple_choice | true | | Media Sosial IMOTION (Instagram, TikTok, X, LinkedIn), Website IMOTION, Media Partner, KOL/Content Creator, Teman, Other |
 
-## Section 6: IMOTION Support Package & Payment
+## Section 7: IMOTION Support Package & Payment
 
-### IMOTION Support Package ⚠️ (conditional/branching — verifikasi manual)
-
-> **Notes:** Field "Berkas Formulir" dan "Bukti pengisian" masing-masing untuk Tim/Individu digabung jadi 1 field (tidak dipisah), karena keduanya merujuk ke aksi yang sama (isi form linktr.ee + upload bukti screenshot-nya). Seluruh field di section ini `required: false` kecuali pertanyaan JABODETABEK.
+### IMOTION Support Package (REVISI 2026-08-04 — disederhanakan jadi 1 pertanyaan + 1 kolom bukti)
 
 | # | Key | Label | Type | Required | Notes | Options |
 |---|-----|-------|------|----------|-------|---------|
-| 1 | OutsideJabodetabek | Apakah kampus tim anda/kampus salah satu anggota tim anda ada yang berasal dari LUAR JABODETABEK? | multiple_choice | true | Tim/anggota di luar JABODETABEK wajib daftar Support Package; tim dari JABODETABEK opsional. | Tidak (seluruh tim dalam jabodetabek), Ya (seluruh tim di luar jabodetabek), Individu (Ada beberapa anggota yang di luar jabodetabek) |
-| 2 | SupportPackageTeamForm | Berkas Formulir IMOTION Support Package (Tim) | file | false | Jika Ya, mohon membaca terms and conditions dan mengisi form registrasi IMOTION Support Package di: https://linktr.ee/20thIMOTIONSupportPackage. Lalu unggah tangkapan layar/gambar/berkas sebagai bukti bahwa tim Anda telah mengisi formulir Paket Dukungan IMOTION. Nama file: (Team Name)_IMOTIONSupportPackage. | |
-| 3 | SupportPackageIndividualForm | Berkas Formulir IMOTION Support Package (Individu) | file | false | Jika Ya, mohon membaca terms and conditions dan mengisi form registrasi IMOTION Support Package di: https://linktr.ee/20thIMOTIONSupportPackage. Lalu unggah tangkapan layar/gambar/berkas sebagai bukti bahwa tim Anda telah mengisi formulir IMOTION Support Package. Nama file: (Team Name)_(Team Member)_IMOTIONSupportPackage. | |
+| 1 | OutsideJabodetabek | Apakah domisili tim anda atau salah satu anggota dari tim anda berasal dari LUAR JABODETABEK? | multiple_choice | true | | Ya/Mau Mendaftar, Tidak |
+| 2 | SupportPackageProof | Pengumpulan Bukti Formulir IMOTION Support Package | file | **true** | Jika Ya atau ingin mendaftar untuk mendukung kebutuhan akomodasi selama pelaksanaan Final Round The 20th IMOTION, mohon membaca Terms & Conditions lalu mengisi form registrasi IMOTION Support Package yang keduanya ada pada link berikut: https://linktr.ee/20thIMOTIONSupportPackage. Lalu unggah tangkapan layar, gambar, atau berkas sebagai bukti bahwa tim Anda telah mengisi formulir IMOTION Support Package. Format penamaan file — Tim: (Team Name)_IMOTIONSupportPackage; Individu: (Team Name)_(Team Member)_IMOTIONSupportPackage. Jika Tidak, isi kolom ini dengan file/foto kosong (blank) dengan format nama file: TidakMendaftar. Disclaimer: IMOTION Support Package wajib diikuti oleh semua peserta yang berdomisili di luar wilayah Jabodetabek (kondisi tertentu dapat menyebabkan instruksi ini tidak berlaku). Info lebih lanjut/konfirmasi: Azwa - WhatsApp 081806294294 / LINE ae062512. | |
 
 ### Payment
 

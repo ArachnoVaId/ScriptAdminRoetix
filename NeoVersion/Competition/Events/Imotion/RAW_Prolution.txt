@@ -1,0 +1,158 @@
+PARTICIPANT INFORMATION
+Email Address
+Type: Email
+ Required: Yes
+Description:
+ Please enter your active email address.
+Full Name
+Type: Short answer
+ Required: Yes
+Description:
+ Please enter your full name.
+Example:
+ Andi Pratama
+Current Status
+Type: Multiple choice
+ Required: Yes
+Options:
+ • Undergraduate Student
+ • High School Student
+ • Fresh Graduate
+ • Employee
+ • General Public
+ • Other
+Institution
+Type: Short answer
+ Required: Yes
+Description:
+ Please enter the name of your university, school, company, or institution.
+Example:
+ Universitas Indonesia
+WhatsApp Number
+Type: Short answer/phone number
+ Required: Yes
+Description:
+ Please enter your active WhatsApp number to receive further information regarding PROLUTION.
+Example:
+ 081234567890
+Batch (Angkatan)
+Type: Multiple choice
+ Required: Yes
+Description:
+ For UI students only
+Options:
+ • 2026
+ • 2025
+ • 2024 and earlier
+ • Non UI students
+NPM
+Type: Short answer/number only
+ Required: Optional
+Description:
+ Write your NPM to receive KUM.
+Example:
+ 2606586433
+Proof of Following @imotionfebui on Instagram
+Type: File upload
+ Required: Yes
+Description:
+ Please upload a screenshot showing that you have followed @imotionfebui on Instagram.
+Proof of Following @imotionfebui on TikTok
+Type: File upload
+ Required: Yes
+Description:
+ Please upload a screenshot showing that you have followed @imotionfebui on TikTok.
+Proof of Following @imotion_febui on X
+Type: File upload
+ Required: Yes
+Description:
+ Please upload a screenshot showing that you have followed @imotion_febui on X.
+Proof of Uploading the PROLUTION Poster on Instagram Story
+Type: File upload
+ Required: Yes
+Description:
+ Please upload the PROLUTION poster to your Instagram Story and tag @imotionfebui. Then, upload a screenshot as proof.
+Poster Access:
+ [Insert Poster Link]
+Are You Interested in Joining The 20th IMOTION Marketing Competition?
+Type: Multiple choice
+ Required: Yes
+Description:
+ This competition is open to undergraduate students.
+Options:
+ • Yes, I am interested
+ • Maybe, I would like to learn more
+ • No, thank you
+
+SUBMISSION CONFIRMATION
+Thank you for registering for The 20th IMOTION Pre-Event: PROLUTION!
+For offline participants, please join our WhatsApp group to stay updated and connected:
+ https://chat.whatsapp.com/Hh5oy5k2j6TC4yG6qbkupS?s=cl&p=i&mlu=4
+For online participants, please join the WhatsApp group through this link:
+ https://chat.whatsapp.com/Eg9W60pSf25AXi6hbaKy6q?s=cl&p=i&mlu=4
+
+NOTE: The "Thank you for registering..." line above is still a post-submit thank-you message,
+not a registration field — there is no known dashboard field/engine for that, so it stays
+excluded from Create_Registration.js. Fill it manually in the dashboard, or provide its
+HTML/field name so it can be automated too.
+
+SECTION 2 — Marketing Plan / Mini Marketing Case Competition Promo
+(added directly on the live dashboard, then synced here 2026-08-10; Admin Column Key not
+automated, see NOTE below)
+
+Key: competitioninfo1
+Type: Multiple choice
+ Required: Yes (assumed — dashboard checkbox state not visible in pasted text)
+Label:
+ 📢 Calling All Marketing Enthusiasts! Registration for The 20th IMOTION Marketing Plan and Mini
+ Marketing Case Competition is now open! Turn your brightest ideas into impactful marketing
+ solutions and compete with university students from across Indonesia.
+Keterangan:
+ Competition Booklet: https://linktr.ee/imotioncompetition
+Admin Column Key: competitioninfo1
+Options:
+ • Yes, I'm interested
+ • No, i'm not intersted
+
+Key: competitioninfo2
+Type: Multiple choice
+ Required: Yes (assumed)
+Label:
+ Register Your Team: https://linktr.ee/imotioncompetition
+Keterangan: (empty)
+Admin Column Key: competitioninfo2
+Options:
+ • Yes, i'm goitng to register
+ • no, maybe next time
+
+SECTION 3 (moved from Section 2 per user request, 2026-08-10) — Attendance Confirmation (WhatsApp Group)
+
+Key: AttendanceOffline_prolution
+Type: Multiple choice
+ Required: Yes
+Label:
+ For offline participants, please join our WhatsApp group to stay updated and connected:
+ https://chat.whatsapp.com/Hh5oy5k2j6TC4yG6qbkupS?s=cl&p=i&mlu=4
+Keterangan:
+ 🗓️ Date: Tuesday, August 18, 2026  ⏱️ Time: 13:00-17:00 WIB  🏢 Venue: Soeria Atmadja Auditorium,
+ FEB Universitas Indonesia (Offline)
+Options:
+ • Yes, I'm gonna attend offline
+ • No, I'm gonna attend online
+
+Key: AttendanceOnline_prolution
+Type: Multiple choice
+ Required: Yes
+Label:
+ For online participants, please join the WhatsApp group through this link:
+ https://chat.whatsapp.com/Eg9W60pSf25AXi6hbaKy6q?s=cl&p=i&mlu=4
+Keterangan:
+ 🗓️ Date: Tuesday, August 18, 2026  ⏱️ Time: 13:00-17:00 WIB  🏢 Venue: Soeria Atmadja Auditorium,
+ 💻 Online: via YouTube Streaming
+Options:
+ • Yes, I'm gonna attend online
+ • No, I'm gonna attend offline
+
+NOTE: "Admin Column Key" (competitioninfo1/2 set to their own key) and the "Allow other (free
+text)" checkbox exist on the dashboard field editor but have no known/confirmed selector, so
+Create_Registration.js does NOT fill them. Set manually after running the script.
