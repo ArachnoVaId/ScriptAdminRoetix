@@ -1,0 +1,217 @@
+Timeline Talkshow Scholarship For Reach A Dream pendaftar Umum
+Timeline
+Harga
+Timeline
+Normal
+25.000
+22 Agustus -19 September2026
+Paket Bundling (Beli 2)
+40.000
+22 Agustus -19 September2026
+Paket Bundling (Beli 3)
+70.000
+22 Agustus -19 September2026
+
+
+Timeline Talkshow Scholarship For Reach A Dream pendaftar Mahasiswa IPB
+Timeline
+Harga
+Timeline
+Normal
+20.000
+22 Agustus -19 September2026
+Paket Bundling (Beli 2)
+30.000
+22 Agustus -19 September2026
+Paket Bundling (Beli 3)
+50.000
+22 Agustus -19 September2026
+
+
+DATA FORM Talkshow Scholarship For Reach A Dream pendaftar Umum Normal
+Section
+Information/question
+Keterangan
+Peserta 1
+Nama Lengkap
+Isian singkat
+Asal Instansi
+Isian singkat
+Asal Daerah
+Isian singkat
+
+
+DATA FORM Talkshow Scholarship For Reach A Dream pendaftar Umum Paket Bundling (Beli 2)
+Section
+Information/question
+Keterangan
+Peserta 1
+Nama Lengkap
+Isian singkat
+Asal Instansi
+Isian singkat
+Asal Daerah
+Isian singkat
+Peserta 2
+Nama Lengkap
+Isian singkat
+Asal Instansi
+Isian singkat
+Asal Daerah
+Isian singkat
+
+
+DATA FORM Talkshow Scholarship For Reach A Dream pendaftar Umum Paket Bundling (Beli 3)
+Section
+Information/question
+Keterangan
+Peserta 1
+Nama Lengkap
+Isian singkat
+Asal Instansi
+Isian singkat
+Asal Daerah
+Isian singkat
+Peserta 2
+Nama Lengkap
+Isian singkat
+Asal Instansi
+Isian singkat
+Asal Daerah
+Isian singkat
+Peserta 3
+Nama Lengkap
+Isian singkat
+Asal Instansi
+Isian singkat
+Asal Daerah
+Isian singkat
+
+
+DATA FORM Talkshow Scholarship For Reach A Dream pendaftar Mahasiswa IPB Normal
+Section
+Information/question
+Keterangan
+Peserta 1
+Nama Lengkap
+Isian singkat
+NIM Lengkap
+Isian singkat
+Fakultas Lengkap
+Isian singkat
+
+
+DATA FORM Talkshow Scholarship For Reach A Dream pendaftar Mahasiswa IPB Bundling (Beli 2)
+Section
+Information/question
+Keterangan
+Peserta 1
+Nama Lengkap
+Isian singkat
+NIM Lengkap
+Isian singkat
+Fakultas
+Isian singkat
+Peserta 2
+Nama Lengkap
+Isian singkat
+NIM Lengkap
+Isian singkat
+Fakultas Lengkap
+Isian singkat
+
+
+DATA FORM Talkshow Scholarship For Reach A Dream pendaftar Mahasiswa IPB Bundling (Beli 3)
+Section
+Information/question
+Keterangan
+Peserta 1
+Nama Lengkap
+Isian singkat
+NIM Lengkap
+Isian singkat
+Fakultas Lengkap
+Isian singkat
+Peserta 2
+Nama Lengkap
+Isian singkat
+NIM Lengkap
+Isian singkat
+Fakultas Lengkap
+Isian singkat
+Peserta 3
+Nama Lengkap
+Isian singkat
+NIM Lengkap
+Isian singkat
+Fakultas Lengkap
+Isian singkat
+
+
+#ISI google form panitia
+Pendaftaran Talkshow Scholarship For Reach A Dream 2026
+Scholarship For Reach A Dream 2026
+"Design a Dream, Display Potential"
+
+📅 Minggu, 20 September 2026
+⏰ 09.00 WIB
+📍Conference Hall - Seameo Biotrop
+🧙‍♂️Bersama Narasumber Inspiratif
+
+🪄Apa yang akan kamu  dapatkan?
+- Strategi meraih beasiswa impian
+- Tips & trik membangun portofolio dan personal branding
+- Relasi dengan mitra beasiswa
+- Tersedia booth mitra beasiswa
+- Hiburan, Konsumsi & Doorprice
+
+🎟️HTM:
+- Umum: Rp25.000
+- Mahasiswa IPB : Rp20.000
+(Tersedia paket bundling hemat)
+
+🔮Jangan lewatkan kesempatan emas kalian untuk memantapkan persiapan meraih impian🪄
+
+Bagian Tanpa Judul
+Paket Pembelian
+*
+Individu
+Paket Bundling (2 orang)
+Paket Bundling (3 orang)
+Kategori Peserta
+*
+Eksternal (Umum)
+Internal (IPB University)
+
+Peserta Internal (IPB University)
+Nama Lengkap
+Jika paket bundling:
+1. Nama peserta
+2. Nama peserta
+dst.....
+Nim Lengkap
+Jika paket bundling:
+1. Nim peserta
+2. Nim peserta
+dst.....
+Fakultas Lengkap
+Jika paket bundling:
+1.  Fakultas  peserta
+2.  Fakultas  peserta
+dst.....
+
+Peserta Eksternal (Umum)
+Nama Lengkap
+Jika paket bundling:
+1. Nama peserta
+2. Nama peserta
+dst.....
+Asal Instansi (Nama Sekolah/Universitas)
+Jika paket bundling:
+1.  Asal Instansi  peserta
+2.  Asal Instansi peserta
+dst.....
+Asal Daerah
+Format: "Nama Kota, Provinsi"
+Contoh: "Bogor, Jawa Barat"
+

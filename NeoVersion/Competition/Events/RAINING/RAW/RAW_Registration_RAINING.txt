@@ -1,0 +1,63 @@
+
+REGISTRASI RAINING 2026
+[Integrated ISO Training by Skill and Research Himpunan Mahasiswa Kimia (HIMKA) ITS]
+
+Tema: "Upgrade Your Skills, Elevate Your Future"
+
+Jadwal:
+1. Online Class
+Day 1: Sabtu, 26 September 2026
+Day 2: Minggu, 27 September 2026
+Waktu: 08.00 - 15.30 WIB
+Tempat: Zoom Meeting
+
+2. Offline Class & Simulasi
+Day 3: Sabtu, 3 Oktober 2026
+Waktu: 08.00 WIB - selesai
+Tempat: ITS Surabaya
+
+Penawaran Kelas:
+ONLINE CLASS
+- ISO 9001:2015 - Sistem Manajemen Mutu
+- ISO/IEC 17025:2017 - Kompetensi Laboratorium
+
+FULL PACKAGE
+- All online class
+- Statistik Uji Profisiensi (ISO/IEC 17043:2023) (offline)
+- QC Tools & Budaya Kaizen (offline)
+
+Tanggal Pendaftaran & Harga (dari client, menggantikan tanggal batch di Gform):
+Early Bird : 18 - 25 Agustus 2026 | Online Rp158.000 | Full Package Rp178.000
+Batch 1 : 26 Agustus - 7 September 2026 | Online Rp168.000 | Full Package Rp188.000
+Batch 2 : 8 - 20 September 2026 | Online Rp178.000 | Full Package Rp198.000
+
+Biaya layanan Roetix: Rp16.250/transaksi (Rp13.000 dipotong dari hasil penjualan client, Rp3.250 ditambahkan ke harga jual peserta). Sama untuk kedua kategori.
+
+Contact Person:
+Nindy (085178947290)
+Asa (081333796975)
+
+Section
+Data Peserta
+
+Nama Lengkap
+Desc: Gunakan Kapital pada Awal Kata. Contoh: Dyna Setyowati
+Isian singkat
+
+No. Whatsapp Aktif
+Desc: Jangan Gunakan Spasi. Contoh yang Benar: 081xxxxxx
+Isian singkat, validasi nomor
+
+Asal Instansi
+Desc: Gunakan Kapital pada Awal Kata. Contoh: Institut Teknologi Sepuluh Nopember
+Isian singkat
+
+Kategori
+Multiple choice:
+Mahasiswa Aktif Kimia/Alumni Kimia ITS
+Umum
+
+Paket Penawaran Kelas (STRUKTURAL — bukan field form, lihat catatan di Tabled MD)
+Multiple choice:
+ONLINE CLASS
+FULL PACKAGE
