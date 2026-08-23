@@ -1,177 +1,141 @@
-// NEW ADMIN UI (admin.roetix.com/events/create) - The 16th UI Studentpreneurs - BMCC Registration
-// Companion doc: ../../NewAdminUI/README.md (DOM notes, engine turunan dari script ICGS/SRD2026)
-// Data source: ../RAW_Studentpreneur.txt  (regenerated 2026-08-23 dari dataform baru)
+// NEW ADMIN UI (admin.roetix.com/events/create) - Silver Essay Competition (SEC) - Silver Parade XII
+// Fase: Pengumpulan Full Paper
+// Companion doc: ../../NewAdminUI/README.md (DOM notes, engine turunan dari Create_UISP2026_BMCC.js)
+// Data source: ../RAW/RAW_Paper_SilverParadeXII.txt (Google Form + tabel "Harga dan Estimasi Peserta")
 //
-// STRUKTUR: 1 event, 1 Phase, 3 Timeline (Early Bird / Normal Price / Late Bird - beda tanggal & harga,
-// field form SAMA persis di ketiganya - tidak seperti SRD2026 yang butuh Phase terpisah per paket).
-// Section 1 raw data ("BMCC Registration The 16th UI Studentpreneurs") = copy promosi, dipakai sebagai
-// Event Description di Step 1 Identity, BUKAN section form. Form mulai dari "General Information"
-// (5 section, 30 field).
-// Team Composition (Individual/2 Members/3 Members) ditangani via 1 field multiple_choice di dalam form
-// itu sendiri, bukan lewat fitur Team Size platform - field Member 1/Member 2 tetap ada utk semua orang,
-// yang individu tinggal isi "-" (sesuai instruksi asli di raw data).
+// STRUKTUR: 1 event, 1 Phase, 3 Timeline (Gelombang 1/2/3 - beda tanggal & harga, field form SAMA persis
+// di ketiganya - pola identik dengan StudentPreneur26 Early Bird/Normal/Late Bird). Tim ditangani lewat
+// field "Nama Tim"/"Nama Anggota Tim" di dalam form, bukan fitur Team Size platform - Step 2 States
+// dibiarkan default (Team size OFF = individual submission).
 //
-// KEPUTUSAN atas ambiguitas di raw data:
-//   1. Section 6 "Registration requirements" bilang "combine all files into a single PDF max 10 MB"
-//      TAPI raw data tetap list 6 baris "(Proof) ..." terpisah -> dipilih 6 field upload terpisah
-//      (ikuti tabel literal), instruksi "digabung" tetap ditulis di description section. (dikonfirmasi
-//      user 2026-08-21, dataform baru tidak mengubah ini)
-//   2. Tanggal Timeline tidak ada tahun di tabel harga -> 2026 (konsisten dgn body deskripsi yang
-//      menyebut "19 September - 24 October 2026").
-//   3. Typo di raw diperbaiki di sini: "competitiion" -> "competition", dan "(Proof) Share Poster the
-//      15th UI Studentpreneurs" -> "16th" (seluruh dokumen lain konsisten 16th).
+// SEBELUM RUN: pastikan wizard BENAR-BENAR kosong (README - draft lama ke-restore bikin indeks section/
+// field bergeser tanpa error jelas). Cek jumlah tombol 'Add field'/'Add section' harus 0; kalau tidak:
+//   localStorage.removeItem('roetix:competition-draft'); location.reload();
+// JANGAN localStorage.clear() - itu menghapus sesi login.
 //
-// !!! KONFLIK DATA DI RAW - KONFIRMASI KE PANITIA SEBELUM RUN !!!
-//   a. Deskripsi bilang "Registration: FREE for the Preliminary Round!" tapi tabel timeline mematok
-//      Rp185.000 / Rp195.000. Script ini memakai HARGA dari tabel timeline. Kalau memang gratis,
-//      kosongkan TIME_PRICE_CELLS atau set price 0.
-//   b. Deskripsi bilang periode registrasi "19 September - 24 October 2026" tapi tabel timeline
-//      berakhir 30 Oktober (Late Bird 18-30 Oktober). Script memakai TABEL (s/d 30 Oktober).
+// KEPUTUSAN atas data raw (lihat juga ../RAW/Tabled_Paper_SilverParadeXII.md):
+//   1. HARGA: tabel "Harga dan Estimasi Peserta" menulis SEC = Rp80.000 flat (Gel 1-3), sedangkan
+//      deskripsi Google Form merinci per gelombang (55rb/70rb/80rb). Per instruksi: HARGA ikut deskripsi
+//      form, FEE ikut tabel harga. Lihat blok SERVICE_FEE di bawah.
+//   2. Section 3 "Terimakasih" di form BUKAN section -> dipetakan ke Completion message (pola sama
+//      seperti StudentPreneur26 Section 7 "Thank You!").
+//   3. Dua section form berjudul sama persis ("PENGUMPULAN PAPER SILVER ESSAY COMPETITION") -> di-rename
+//      "Data Tim" / "Pengumpulan Berkas"; judul duplikat tidak berguna sebagai header form builder.
+//   4. Instruksi transfer BCA/BNI DIHAPUS dari EVENT_DESCRIPTION - peserta bayar lewat QRIS Roetix,
+//      mencantumkan rekening manual akan menyesatkan pembeli.
 //
-// !!! PERINGATAN - BAGIAN BELUM TERVERIFIKASI SEBELUM DITEST LIVE !!!
-// Ini kasus PERTAMA di repo dengan >1 Timeline (README menandai indeks Time-Price utk matrix >1x1
-// sebagai "belum diverifikasi"). Sudah ditest live oleh Claude di browser sebelum diserahkan - lihat
-// catatan di README.md bagian "Update 2026-08-21" untuk hasil verifikasinya. Tetap WAJIB jalankan di
-// draft/test dulu dan cocokkan tiap cell Time-Price manual dengan nama Timeline yang tampil di layar.
+// FIELD YANG SUDAH DIHAPUS dari form aslinya (jangan ditambahkan lagi):
+//   - 'Tahap Pengumpulan Paper' (Gelombang 1/2/3) - dihapus 2026-08-22 atas keputusan user: penentuan
+//     gelombang sudah otomatis dari Timeline pembelian di sistem Roetix, jadi pertanyaan manual ini
+//     redundan dan jawabannya bisa bertentangan dengan tanggal transaksi asli.
 //
-// TODO TERSISA (raw data belum menyediakan):
-//   - Nama partner assessor di field "(Proof) Follow Instagram Our Assessor Partner" (raw data ada
-//     placeholder "(....)" yang belum diisi)
-//   - Organizer Name di bawah diisi 'BEM FEB UI' (asumsi lama, tidak disebut di raw) - koreksi kalau salah.
+// !!! SATU FIELD MASIH DIREKOMENDASIKAN DIHAPUS - keputusan di tanganmu (hapus 1 baris) !!!
+//   [1] 'Unggah Bukti Pembayaran' - Roetix punya gateway QRIS, tidak ada bukti transfer manual untuk
+//       diunggah. Precedent: RAINING (field payment-proof dibuang).
+//
+// TODO WAJIB DIISI SEBELUM RUN: Organizer Name (tidak ada di Google Form maupun tabel harga).
 
-var EVENT_DESCRIPTION = [
-  '🚀 READY TO TURN YOUR IDEA INTO IMPACT?',
-  'Got a business idea but don’t know where to start?',
-  'This is your chance to turn that idea into a real, strategic, and impactful business model. 💡',
-  'Welcome to Business Model Canvas Competition — The 16th UI Studentpreneurs!',
-  'Under the grand theme:',
-  '“Innovate Beyond Uncertainty: Empowering Young Entrepreneurs to Shape Ideas into Impact.”',
-  '',
-  '✨ WHAT’S WAITING FOR YOU?',
-  '🔹 Showcase your business idea through a 1-Page Business Model Canvas',
-  '🔹 Get valuable insights from professional assessors & industry experts',
-  '🔹 Challenge yourself to think strategically and solve real-world problems',
-  '🔹 Win prizes worth IDR 20,000,000+! 🏆',
-  '',
-  '📌 WHO CAN JOIN?',
-  'Active undergraduate students from S1, D3, D4, or equivalent programs across Indonesia.',
-  '👥 Team: 1–3 students',
-  '',
-  '🗓️ REGISTRATION PERIOD',
-  '19 September – 30 October 2026',
-  '',
-  '📋 HOW TO JOIN?',
-  '1️⃣ Register through the registration form',
-  '2️⃣ Complete all required registration documents',
-  '3️⃣ Submit your 1-Page Business Model Canvas through the submission link provided by the committee',
-  '',
-  '📎 Registration Requirements: https://bit.ly/KeperluanRegistrasiBMCC16thUISP',
-  '📖 Competition Guidebook: https://bit.ly/Guidebook16thUISP',
-  '',
-  '⚡ Your idea doesn’t have to be perfect. It just needs to start.',
-  'Don’t let uncertainty stop you from building what could be your next big thing.',
-  'See you at The 16th UI Studentpreneurs! 💙🚀',
-  '',
-  '📩 For further information:',
-  'Nadia — Line: @ysnrnadia | WA: +6281282485499',
-  'Joshe — Line: @Yukiren08 | WA: +6282114410806'
-].join('\n');
+var EVENT_DESCRIPTION = '🎉 Selamat kepada seluruh peserta yang telah lolos tahap seleksi abstrak Silver Essay '
+  + 'Competition (SEC) Silver Parade XII!\n\n'
+  + 'Keberhasilan ini merupakan langkah awal yang membuktikan kualitas ide dan gagasan yang telah Anda ajukan '
+  + 'dalam menjawab tantangan keberlanjutan melalui inovasi dengan tema "The Green Footprint: Advancing Green '
+  + 'Materials to Achieve SDGs 2030." Selanjutnya, peserta diharapkan dapat melakukan pengumpulan full paper '
+  + 'sesuai dengan tahapan yang telah ditentukan.\n\n'
+  + '🕒 Timeline dan Biaya Pendaftaran\n'
+  + 'Gelombang 1: 13-22 Agustus 2026 | Rp55.000\n'
+  + 'Gelombang 2: 23 Agustus-1 September 2026 | Rp70.000\n'
+  + 'Gelombang 3: 2-13 September 2026 | Rp80.000\n\n'
+  + '📞 Contact Person\n'
+  + 'Neyna: wa.me/6283831381091\n'
+  + 'Rezky: wa.me/6285143960373\n\n'
+  + 'Mohon mengisi data pada formulir di bawah ini sesuai dengan ketentuan yang berlaku. Apabila terdapat '
+  + 'kendala dalam proses pengisian, silakan menghubungi contact person yang telah disediakan.\n'
+  + 'Terima kasih atas partisipasi dan semangat yang telah Anda tunjukkan. Kami tunggu karya terbaik Anda dan '
+  + 'berharap dapat bertemu sebagai "The Next Champion SEC XII." ✨';
 
 var IDENTITY = {
-  eventName: 'The 16th UI Studentpreneurs - BMCC Registration',
-  eventId: 'UISP2026BMCC',
-  organizerName: 'BEM FEB UI',
+  eventName: 'Silver Essay Competition XII - Pengumpulan Full Paper',
+  eventId: 'SECXII2026PAPER',
+  organizerName: 'TODO_ISI_NAMA_ORGANIZER',
   description: EVENT_DESCRIPTION,
   minTeam: 1,
   maxTeam: 1,
   active: true
 };
 
-// Phase tunggal, tanggalnya cukup span seluruh window pendaftaran - Timeline di bawah yang benar2
-// membatasi harga/tanggal per gelombang (pola sama seperti RAINING build guide).
-var PHASE = { name: 'Registration', start: '2026-09-19T00:00', end: '2026-10-30T23:59' };
+// Phase tunggal, tanggalnya cukup span seluruh window pengumpulan - Timeline di bawah yang benar2
+// membatasi harga/tanggal per gelombang.
+var PHASE = { name: 'Pengumpulan Full Paper', start: '2026-08-13T00:00', end: '2026-09-13T23:59' };
 
-// Nama Timeline dipendekkan (tanpa prefix "Registrasi BMCC-" seperti di tabel raw) - nama event sudah
-// menyebut BMCC, jadi cukup nama gelombangnya saja.
+// ===================== SKEMA HARGA & FEE =====================
+// Tabel "Harga dan Estimasi Peserta" (RAW_Paper_SilverParadeXII.txt baris 18-22), baris SEC:
+//   Harga Peserta Rp80.000 | Fee Roetix Rp10.000 (DIPOTONG DARI PANITIA) | Diterima Panitia Rp70.000
+// Artinya fee TIDAK ditambahkan ke pembeli - peserta bayar persis angka yang dipromosikan, panitia yang
+// menanggung fee. Di wizard Roetix kolom Price adalah basis yang diterima panitia dan Service fee
+// ditumpuk di atasnya (harga di web = price + fee), jadi:  price = harga peserta - fee.
+// Cross-check baris SEC: 80.000 - 10.000 = 70.000 = "Diterima Panitia" di tabel. Cocok.
+//
+// `gross` = harga yang dilihat & dibayar peserta, diambil dari deskripsi Google Form (per gelombang),
+// BUKAN dari kolom "Harga Peserta" tabel yang menulis 80.000 flat untuk Gel 1-3. Ini sesuai instruksi:
+// harga ikut deskripsi form, skema fee ikut tabel harga.
+//
+// `fee` per gelombang (bukan satu angka flat): Gelombang 1 pakai Rp8.000, Gelombang 2 & 3 Rp10.000.
+// Rp8.000 adalah tarif yang sama dengan baris "Silver Talks" di tabel harga (Rp50.000 -> fee Rp8.000),
+// jadi tier harga terendah memang memakai fee lebih rendah.
 var TIMELINES = [
-  { name: 'Early Bird', start: '2026-09-19T00:00', end: '2026-09-29T23:59', price: 185000 },
-  { name: 'Normal Price', start: '2026-09-30T00:00', end: '2026-10-17T23:59', price: 195000 },
-  { name: 'Late Bird', start: '2026-10-18T00:00', end: '2026-10-30T23:59', price: 195000 }
+  { name: 'Gelombang 1', start: '2026-08-13T00:00', end: '2026-08-22T23:59', gross: 55000, fee: 8000 },
+  { name: 'Gelombang 2', start: '2026-08-23T00:00', end: '2026-09-01T23:59', gross: 70000, fee: 10000 },
+  { name: 'Gelombang 3', start: '2026-09-02T00:00', end: '2026-09-13T23:59', gross: 80000, fee: 10000 }
 ];
 
-// Service fee Roetix Rp11.000/transaksi (flat), sesuai catatan di RAW_Studentpreneur.txt baris 1.
 var TIME_PRICE_CELLS = TIMELINES.map(function (tl) {
-  return { label: tl.name, price: tl.price, feeType: 'flat', fee: 11000, taxType: 'flat', tax: 0 };
+  return {
+    label: tl.name,
+    gross: tl.gross,               // yang dibayar peserta
+    price: tl.gross - tl.fee,      // yang diterima panitia
+    feeType: 'flat', fee: tl.fee,
+    taxType: 'flat', tax: 0
+  };
 });
 
-var COMPLETION_MESSAGE = [
-  'Thank You!',
-  'Thank you for registering for the BMC Competition!',
-  'Access your Competition Guidebook here: https://bit.ly/Guidebook16thUISP',
-  'Make sure to follow the format provided and submit your work maximum on the deadline date.',
-  'Please join the Preliminary Round group to stay informed: https://chat.whatsapp.com/DoIRvGscTf56Tgxy19pr2N?s=cl&p=a&mlu=0',
-  'We’re excited to see your amazing work, good luck!'
-].join('\n');
+// Dari Section 3 "Terimakasih" di Google Form.
+var COMPLETION_MESSAGE = 'Terima kasih telah melakukan pengumpulan Full Paper Silver Essay Competition (SEC) '
+  + 'Silver Parade XII. Untuk memperoleh informasi selanjutnya, peserta diharapkan bergabung ke grup WhatsApp '
+  + 'melalui tautan berikut.\n'
+  + 'https://chat.whatsapp.com/IABLJ5paXinDAHGZPTvwiD?s=cl&p=a&ilr=1';
 
-var ACADEMIC_BATCH_OPTIONS = ['2023', '2024', '2025', '2026'];
+var SUBTEMA_OPTIONS = [
+  'Inovasi Material Hijau untuk Kesehatan dan Lingkungan',
+  'Penanggulangan Limbah Ekstraksi Logam',
+  'Nanomaterial untuk Konstruksi Berkelanjutan',
+  'Rekayasa Material Pereduksi Emisi Karbon'
+];
 
-var INDIVIDUAL_NOTE = 'Mark "-" if you are registering as an individual';
-
-function memberFields(memberLabel, isTeamLeader) {
-  var noteIndividual = isTeamLeader ? undefined : INDIVIDUAL_NOTE;
-  return [
-    { label: memberLabel + ' Full Name', type: 'text', required: true, description: noteIndividual },
-    { label: memberLabel + ' Institution', type: 'text', required: true, description: 'E.g. Universitas Indonesia' },
-    { label: memberLabel + ' Major', type: 'text', required: true, description: 'E.g. Ilmu Ekonomi' },
-    { label: 'Academic Batch (' + memberLabel + ')', type: 'multiple_choice', required: true, options: ACADEMIC_BATCH_OPTIONS },
-    { label: memberLabel + ' Phone Number', type: 'phone', required: true, description: 'e.g. +62123456789' },
-    { label: memberLabel + ' Email Address', type: 'email', required: true }
-  ];
-}
-
-// Section 1 di raw data ("BMCC Registration The 16th UI Studentpreneurs") tidak dibuat jadi section
-// form - isinya murni copy promosi, sudah dipakai sebagai Event Description di Step 1 Identity.
 var SECTIONS = [
   {
-    title: 'General Information',
+    title: 'Data Tim',
     fields: [
-      { label: 'Team Name', type: 'text', required: true, description: 'E.g. Blue Entrepreneur' },
-      { label: 'Team Composition', type: 'multiple_choice', required: true, options: ['Individual', '2 Members', '3 Members'] },
-      { label: 'How did you know about The 16th UI Studentpreneurs?', type: 'multiple_choice', required: true, options: ['Instagram', 'Broadcast (Line/WA)', 'Tiktok', 'LinkedIn', 'UI Studentpreneurs Ambassador', 'Other'] },
-      {
-        label: 'Are you interested to join another events of the 16th UI Studentpreneurs?',
-        type: 'multiple_choice',
-        required: true,
-        options: [
-          'Yes, I look forward to attend every events of the 16th UI Studentpreneurs!',
-          'No, I\'m only interested of this competition.'
-        ]
-      },
-      { label: 'General Code UISP (Optional)', type: 'text', required: false },
-      { label: 'Referral Code UISP Ambassador (Optional)', type: 'text', required: false }
+      { label: 'Nama Tim', type: 'text', required: true },
+      { label: 'Nama Ketua Tim', type: 'text', required: true, description: 'Ex: Razaqa Syafaat Qinthara Wildan' },
+      { label: 'Nama Anggota Tim', type: 'text', required: true, description: 'Ex: 1. Neyna Putri Nabila 2. Ahmad Rezky' },
+      { label: 'Asal Perguruan Tinggi', type: 'text', required: true, description: 'Ex: Institut Teknologi Sepuluh Nopember' },
+      // Form aslinya mencontohkan "wa.me/62xx", tapi tipe phone kemungkinan menolak format URL - deskripsi
+      // diubah supaya peserta mengisi angka. Kalau validasi phone Roetix tetap rewel, ganti type ke 'text'.
+      { label: 'Nomor WhatsApp Ketua Tim', type: 'phone', required: true, description: 'Ex: 6283831381091' },
+      { label: 'Email Ketua Tim', type: 'email', required: true, description: 'Ex: xxx@gmail.com' },
+      { label: 'Subtema', type: 'multiple_choice', required: true, options: SUBTEMA_OPTIONS }
     ]
   },
-  { title: 'Team Leader Data', fields: memberFields('Team Leader', true) },
-  { title: 'Member 1 Data', description: INDIVIDUAL_NOTE, fields: memberFields('Member 1', false) },
-  { title: 'Member 2 Data', description: INDIVIDUAL_NOTE, fields: memberFields('Member 2', false) },
   {
-    title: 'Registration requirements',
-    description: [
-      'Each team member is required to attach all registration requirements to this form. Please combine all files into a single PDF file with a maximum size of 10 MB.',
-      'All files required for registration can be accessed via the following link: https://bit.ly/KeperluanRegistrasiBMCC16thUISP'
-    ].join('\n'),
+    title: 'Pengumpulan Berkas',
     fields: [
-      { label: '(Proof) Follow Instagram @studentpreneurs', type: 'file', required: true },
-      { label: '(Proof) Follow Instagram @uispgoods', type: 'file', required: true },
-      { label: '(Proof) Follow Instagram Our Assessor Partner (TODO_ISI_NAMA_PARTNER)', type: 'file', required: true },
-      { label: '(Proof) Kartu Tanda Mahasiswa', type: 'file', required: true },
-      { label: '(Proof) Post a Twibbon on IG Feeds', type: 'file', required: true, description: 'Access the twibbon on https://bit.ly/TwibbonPesertaThe16thUISP' },
-      { label: '(Proof) Share Poster the 16th UI Studentpreneurs via Instagram Story', type: 'file', required: true, description: 'Access the poster on https://bit.ly/PosterBMCCThe16thUISP' }
+      // [1] KANDIDAT DIHAPUS - Roetix pakai QRIS gateway, tidak butuh bukti transfer manual.
+      { label: 'Unggah Bukti Pembayaran (Nominal sesuai ketentuan gelombang)', type: 'file', required: true, description: 'Sesuai nominal gelombang pendaftaran.' },
+      { label: 'Pengumpulan Surat Pernyataan Orisinalitas', type: 'file', required: true, description: 'Format wajib .pdf' },
+      { label: 'Pengumpulan Full Paper', type: 'file', required: true, description: 'Format wajib .pdf' }
     ]
   }
 ];
-
-var TOTAL_FIELDS = SECTIONS.reduce(function (n, s) { return n + s.fields.length; }, 0);
 
 // ===================== ENGINE (lihat NewAdminUI/README.md untuk alasan tiap trik) =====================
 
@@ -226,8 +190,8 @@ async function fillIdentity(cfg) {
   var organizerInput = allInputs.filter(function (i) { return i.type === 'text'; })[2];
   var editables = Array.from(document.querySelectorAll('[contenteditable="true"]'));
   // Min/Max Team, Active, Featured ada di Step 2 "States", bukan di sini (live UI 2026-08-21). Default
-  // "Team size" OFF = individual submission (persis yang kita mau - Team Composition ditangani field
-  // multiple_choice di dalam form), "Active" default ON. Lihat visitStates().
+  // "Team size" OFF = individual submission (persis yang kita mau - data tim ditangani field teks di
+  // dalam form), "Active" default ON. Lihat visitStates().
 
   fillInput(eventNameInput, cfg.eventName);
   fillInput(eventIdInput, cfg.eventId);
@@ -235,7 +199,9 @@ async function fillIdentity(cfg) {
   fillInput(organizerInput, cfg.organizerName);
 
   console.log('Identity filled:', cfg.eventName, cfg.eventId);
-  console.warn('%cCEK MANUAL: description multi-baris diisi lewat execCommand insertText - pastikan line break & emoji tampil benar di editor.', 'color:#f59e0b');
+  if (cfg.organizerName.indexOf('TODO') === 0 || cfg.description.indexOf('TODO') === 0) {
+    console.warn('%cOrganizer Name dan/atau Description masih placeholder TODO - isi manual sebelum klik Create event!', 'color:#ef4444;font-weight:bold');
+  }
 }
 
 // ===================== STEP 2 - STATES =====================
@@ -333,7 +299,7 @@ async function addSectionsAndFields(sections) {
         field.options.forEach(function (opt, idx) {
           if (optionInputs[idx]) fillInput(optionInputs[idx], opt);
         });
-        console.log('    options: ' + field.options.join(' | '));
+        console.log('    options: ' + field.options.join(', '));
         await sleep(150);
       }
 
@@ -412,7 +378,8 @@ async function fillTimePriceMatrix(cells) {
     fillInput(feeInput, String(c.fee));
     fillSelect(taxSelect, c.taxType);
     fillInput(taxInput, String(c.tax));
-    console.log('  cell ' + (i + 1) + ' (harusnya "' + c.label + '"): Rp' + c.price + ' + fee Rp' + c.fee + ' -- VERIFIKASI nama Timeline di layar cocok!');
+    console.log('  cell ' + (i + 1) + ' (harusnya "' + c.label + '"): panitia Rp' + c.price + ' + fee Rp' + c.fee
+      + ' = peserta bayar Rp' + c.gross + ' -- VERIFIKASI nama Timeline di layar cocok!');
   }
   return true;
 }
@@ -426,6 +393,9 @@ async function fillCompletion(message) {
   var editable = document.querySelector('[contenteditable="true"]');
   fillEditable(editable, message);
   console.log('Completion message set.');
+  if (message.indexOf('TODO') === 0) {
+    console.warn('%cCompletion Message masih placeholder TODO - isi manual sebelum klik Create event!', 'color:#ef4444;font-weight:bold');
+  }
 }
 
 // ===================== STEP 7 - REVIEW (report only, never auto-submits) =====================
@@ -437,15 +407,14 @@ async function reportReview() {
   var text = document.body.innerText;
   var ready = text.includes('Everything looks good');
   console.log(ready
-    ? '%cREADY -> "Everything looks good." Cek jumlah Timeline (' + TIMELINES.length + '), Phase (1), Field (' + TOTAL_FIELDS + '), Priced cells (' + TIME_PRICE_CELLS.length + '), dan tiap cell harga SATU-SATU sebelum klik "Create event".'
-    : '%cNOT READY -> cek duplicate field keys (terutama 3x "Academic Batch") atau data yang belum lengkap.', 'color:' + (ready ? '#22c55e' : '#ef4444') + ';font-weight:bold;font-size:13px');
-  console.warn('%cSISA TODO MANUAL: isi nama partner assessor di field "(Proof) Follow Instagram Our Assessor Partner (TODO_ISI_NAMA_PARTNER)".', 'color:#ef4444;font-weight:bold');
+    ? '%cREADY -> "Everything looks good." Cek jumlah Timeline (3), Phase (1), Field (10), Priced cells (3), dan tiap cell harga SATU-SATU sebelum klik "Create event".'
+    : '%cNOT READY -> cek duplicate field keys atau data yang belum lengkap.', 'color:' + (ready ? '#22c55e' : '#ef4444') + ';font-weight:bold;font-size:13px');
 }
 
 // ===================== RUN =====================
 
 (async function run() {
-  console.log('%c═══ The 16th UI Studentpreneurs - BMCC Registration (' + TOTAL_FIELDS + ' fields) ═══', 'color:#6366f1;font-weight:bold;font-size:14px');
+  console.log('%c═══ Silver Essay Competition (SEC) - Silver Parade XII ═══', 'color:#6366f1;font-weight:bold;font-size:14px');
   await fillIdentity(IDENTITY);
   await visitStates();
   await fillPhase(PHASE);
@@ -459,5 +428,6 @@ async function reportReview() {
 
   await fillCompletion(COMPLETION_MESSAGE);
   await reportReview();
+  console.warn('%cKeputusan pending: field "Unggah Bukti Pembayaran" direkomendasikan DIHAPUS (lihat header script).', 'color:#f59e0b;font-weight:bold');
   console.log('%cDone. Nothing is saved yet - review Step 7 & tiap cell Time-Price manual, lalu klik "Create event" sendiri.', 'color:#22c55e;font-weight:bold');
 })();

@@ -16,80 +16,158 @@ Rp195.000
 
 DATA FORM The 16th UI Studentpreneurs
 
-Section
-Information/question
-Keterangan
-Section 1: BMCC Registration The 16th UI Studentpreneurs
-Deskripsi & Informasi Umum Lomba (Tema, Benefit, Syarat, Timeline, Kontak Person, Link Guidebook & Syarat)
-Teks Deskripsi / Judul Form
-Section 2: General Information
-Team Name
-Isian singkat (E.g. Blue Entrepreneur)
-Team Composition
-Pilihan ganda (Individual / 2 Members / 3 Members)
-How did you know about The 16th UI Studentpreneurs?
-Pilihan ganda (Instagram, Broadcast, Tiktok, LinkedIn, Ambassador, Other)
-Are you interested to join another events of the 16th UI Studentpreneurs?
-Pilihan ganda (Yes / No)
-General Code UISP
-Isian singkat (Opsional)
-Referral Code UISP Ambassador
-Isian singkat (Opsional)
-Section 3: Team Leader Data
-Team Leader Full Name
-Isian singkat
-Team Leader Institution
-Isian singkat (E.g. Universitas Indonesia)
-Team Leader Major
-Isian singkat (E.g. Ilmu Ekonomi)
-Academic Batch
-Pilihan ganda (2023 / 2024 / 2025 / 2026)
-Team Leader Phone Number
-Isian singkat (e.g. +62123456789)
-Team Leader Email Address
-Isian singkat
-Section 4: Member 1 Data
-Member 1 Full Name
-Isian singkat (Isi "-" jika individu)
-Member 1 Institution
-Isian singkat (E.g. Universitas Indonesia)
-Member 1 Major
-Isian singkat (E.g. Ilmu Ekonomi)
-Academic Batch
-Pilihan ganda (2023 / 2024 / 2025 / 2026)
-Member 1 Phone Number
-Isian singkat (e.g. +62123456789)
-Member 1 Email Address
-Isian singkat
-Section 5: Member 2 Data
-Member 2 Full Name
-Isian singkat (Isi "-" jika individu)
-Member 2 Institution
-Isian singkat (E.g. Universitas Indonesia)
-Member 2 Major
-Isian singkat (E.g. Ilmu Ekonomi)
-Academic Batch
-Pilihan ganda (2023 / 2024 / 2025 / 2026)
-Member 2 Phone Number
-Isian singkat (e.g. +62123456789)
-Member 2 Email Address
-Isian singkat
-Section 6: Registration requirements
-Insttruksi Pengunggahan Berkas
-Informasi (Digabung jadi 1 File PDF max 10 MB)
-(Proof) Follow Instagram @studentpreneurs
-Upload File (PDF)
-(Proof) Follow Instagram @uispgoods
-Upload File (PDF)
-(Proof) Follow Instagram Our Assessor Partner (....)
-Upload File (PDF)
-(Proof) Kartu Tanda Mahasiswa
-Upload File (PDF)
-(Proof) Post a Twibbon on IG Feeds
-Upload File (PDF)
-(Proof) Share Poster the 16th UI Studentpreneurs via Instagram Story
-Upload File (PDF)
-Section 7: Thank You!
-Ucapan Terima Kasih, Link Guidebook, dan Link WhatsApp Group
-Teks Penutup / Konfirmasi
+Section 1 of 7
 
+BMCC Registration The 16th UI Studentpreneurs 
+
+🚀 READY TO TURN YOUR IDEA INTO IMPACT?
+Got a business idea but don’t know where to start?
+This is your chance to turn that idea into a real, strategic, and impactful business model. 💡
+Welcome to Business Model Canvas Competition — The 16th UI Studentpreneurs!
+Under the grand theme:
+“Innovate Beyond Uncertainty: Empowering Young Entrepreneurs to Shape Ideas into Impact.”
+✨ WHAT’S WAITING FOR YOU?
+🔹 Showcase your business idea through a 1-Page Business Model Canvas
+🔹 Get valuable insights from professional assessors & industry experts
+🔹 Challenge yourself to think strategically and solve real-world problems
+🔹 Win prizes worth IDR 20,000,000+! 🏆
+📌 WHO CAN JOIN?
+Active undergraduate students from S1, D3, D4, or equivalent programs across Indonesia.
+👥 Team: 1–3 students
+💰 Registration: FREE for the Preliminary Round!
+🗓️ REGISTRATION PERIOD
+19 September – 24 October 2026
+📋 HOW TO JOIN?
+1️⃣Register through the registration form
+2️⃣Complete all required registration documents
+3️⃣Submit your 1-Page Business Model Canvas through the submission link provided by the committee
+
+📎Registration Requirements:
+[https://bit.ly/KeperluanRegistrasiBMCC16thUISP]
+📖 Competition Guidebook:
+[https://bit.ly/Guidebook16thUISP]
+⚡ Your idea doesn’t have to be perfect. It just needs to start.
+Don’t let uncertainty stop you from building what could be your next big thing.
+
+
+See you at The 16th UI Studentpreneurs! 💙🚀
+📩 For further information:
+[Nadia]
+Line: @ysnrnadia
+WA: +6281282485499
+
+[Joshe]
+Line: @Yukiren08
+WA: +6282114410806
+
+
+
+Section 2 of 7
+
+General Information
+
+Team Name
+E.g. Blue Entrepreneur 
+Team Composition  
+Individual
+2 Members
+3 Members
+How did you know about The 16th UI Studentpreneurs? 
+Instagram
+Broadcast (Line/WA)
+Tiktok
+LinkedIn
+UI Studentpreneurs Ambassador
+Other
+Are you interested to join another events of the 16th UI Studentpreneurs? 
+Yes, I look forward to attend every events of the 16th UI Studentpreneurs!
+No, I'm only interested of this competitiion.
+General Code UISP (Optional) 
+Referral Code UISP Ambassador (Optional) 
+
+
+Section 3 of 7
+
+Team Leader Data 
+
+Team Leader Full Name 
+Team Leader Institution  
+E.g. Universitas Indonesia 
+Team Leader Major  
+E.g. Ilmu Ekonomi 
+Academic Batch  
+2023
+2024
+2025
+2026
+Team Leader Phone Number 
+e.g. +62123456789 
+Team Leader Email Address
+
+
+Section 4 of 7
+
+Member 1 Data 
+Mark “-” if you are registering as an individual 
+
+Member 1 Full Name 
+Member 1 Institution  
+E.g. Universitas Indonesia 
+Member 1 Major  
+E.g. Ilmu Ekonomi 
+Academic Batch  
+2023
+2024
+2025
+2026
+Member 1 Phone Number 
+e.g. +62123456789 
+Member 1 Email Address
+
+
+Section 5 of 7
+
+Member 2 Data 
+Mark “-” if you are registering as an individual 
+
+Member 2 Full Name 
+Member 2 Institution  
+E.g. Universitas Indonesia 
+Member 2 Major  
+E.g. Ilmu Ekonomi 
+Academic Batch  
+2023
+2024
+2025
+2026
+Member 2 Phone Number 
+e.g. +62123456789 
+Member 2 Email Address
+
+
+Section 6 of 7
+
+Registration requirements 
+Each team member is required to attach all registration requirements to this form. Please combine all files into a single PDF file with a maximum size of 10 MB
+All files required for registration can be accessed via the following link: 
+[https://bit.ly/KeperluanRegistrasiBMCC16thUISP]
+
+
+(Proof) Follow Instagram @studentpreneurs 
+(Proof) Follow Instagram @uispgoods 
+(Proof) Follow Instagram Our Assessor Partner (....)
+(Proof) Kartu Tanda Mahasiswa  
+(Proof) Post a Twibbon on IG Feeds 
+Access the twibbon on https://bit.ly/TwibbonPesertaThe16thUISP
+(Proof) Share Poster the 15th UI Studentpreneurs via Instagram Story 
+Access the poster on https://bit.ly/PosterBMCCThe16thUISP
+
+
+Section 7 of 7
+
+Thank You! 
+Thank you for registering for the BMC Competition!
+Access your Competition Guidebook here [https://bit.ly/Guidebook16thUISP]
+Make sure to follow the format provided and submit your work maximum on the deadline date.
+Please join the Preliminary Round group to stay informed by [https://chat.whatsapp.com/DoIRvGscTf56Tgxy19pr2N?s=cl&p=a&mlu=0]
+We're excited to see your amazing work, good luck!

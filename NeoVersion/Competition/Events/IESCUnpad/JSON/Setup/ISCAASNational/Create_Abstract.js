@@ -1,9 +1,9 @@
-// IESCUnpad ISCAAS (National) - Abstract Phase & Add 10 Fields (Free)
+// IESCUnpad ISCAAS (National) - Abstract Phase & Add 11 Fields (Free)
 // 1. Navigate to the ISCAAS Mahasiswa National timeline page
 // 2. Click "Add Phase" button FIRST
 // 3. Wait for the new phase form to appear
 // 4. Paste this script in browser console
-// 5. Script fills phase details + adds 10 fields
+// 5. Script fills phase details + adds 11 fields
 // 6. Click "Save Timeline" to save
 
 var FIELDS = [
@@ -21,6 +21,8 @@ var FIELDS = [
     notes: 'Upload 1 supported file. Max 10 MB.' },
   { key: 'PosterSharingProof_abstract', label: 'Proof of Sharing the Poster', type: 'file', required: true,
     notes: 'Share the event poster either in a group or on your Instagram story. Upload 1 supported file. Max 10 MB.' },
+  { key: 'StudentIDCard_abstract', label: 'Proof of Student ID Card (KTM)', type: 'file', required: true,
+    notes: 'Upload 1 supported file. Max 10 MB.' },
   { key: 'Abstract_abstract', label: 'Abstract Submission', type: 'file', required: true,
     notes: 'Upload 1 supported file. Max 10 MB.' }
 ];

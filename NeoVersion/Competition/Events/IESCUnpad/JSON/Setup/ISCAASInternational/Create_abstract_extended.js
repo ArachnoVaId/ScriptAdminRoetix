@@ -7,23 +7,23 @@
 // 6. Click "Save Timeline" to save
 
 var FIELDS = [
-  { key: 'Email_abstract', label: 'Email', type: 'email', required: true },
-  { key: 'TeamName_abstract', label: 'Team Name', type: 'text', required: true,
+  { key: 'Email_abstract_extended', label: 'Email', type: 'email', required: true },
+  { key: 'TeamName_abstract_extended', label: 'Team Name', type: 'text', required: true,
     notes: 'ex. Three Musketeers' },
-  { key: 'Institution_abstract', label: 'Institution', type: 'text', required: true,
+  { key: 'Institution_abstract_extended', label: 'Institution', type: 'text', required: true,
     notes: 'ex. Universitas Padjadjaran' },
-  { key: 'ContactPerson_abstract', label: 'Contact Person (LINE ID / WhatsApp Number)', type: 'text', required: true,
+  { key: 'ContactPerson_abstract_extended', label: 'Contact Person (LINE ID / WhatsApp Number)', type: 'text', required: true,
     notes: 'ex. @anindytavthrni / 082xxxx' },
-  { key: 'TeamMember1_abstract', label: 'Team Member 1', type: 'text', required: true },
-  { key: 'TeamMember2_abstract', label: 'Team Member 2 (If Any)', type: 'text', required: false },
-  { key: 'TeamMember3_abstract', label: 'Team Member 3 (If Any)', type: 'text', required: false },
-  { key: 'FollowProof_abstract', label: 'Proof of Following Instagram @iescunpad', type: 'file', required: true,
+  { key: 'TeamMember1_abstract_extended', label: 'Team Member 1', type: 'text', required: true },
+  { key: 'TeamMember2_abstract_extended', label: 'Team Member 2 (If Any)', type: 'text', required: false },
+  { key: 'TeamMember3_abstract_extended', label: 'Team Member 3 (If Any)', type: 'text', required: false },
+  { key: 'FollowProof_abstract_extended', label: 'Proof of Following Instagram @iescunpad', type: 'file', required: true,
     notes: 'Upload 1 supported file. Max 10 MB.' },
-  { key: 'PosterSharingProof_abstract', label: 'Proof of Sharing the Poster', type: 'file', required: true,
+  { key: 'PosterSharingProof_abstract_extended', label: 'Proof of Sharing the Poster', type: 'file', required: true,
     notes: 'Share the event poster either in a group or on your Instagram story. Upload 1 supported file. Max 10 MB.' },
-  { key: 'StudentIDCard_abstract', label: 'Proof of Student ID Card (KTM)', type: 'file', required: true,
+  { key: 'StudentIDCard_abstract_extended', label: 'Proof of Student ID Card (KTM)', type: 'file', required: true,
     notes: 'Upload 1 supported file. Max 10 MB.' },
-  { key: 'Abstract_abstract', label: 'Abstract Submission', type: 'file', required: true,
+  { key: 'Abstract_abstract_extended', label: 'Abstract Submission', type: 'file', required: true,
     notes: 'Upload 1 supported file. Max 10 MB.' }
 ];
 
