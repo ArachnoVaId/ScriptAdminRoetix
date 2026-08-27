@@ -1,0 +1,450 @@
+// Digenerate dari Google Form "🏆 REGISTRATION FUTSAL UNIVERSITAS - PORFIS 2026" oleh Tools/Extract_GForm.js
+// Tempel ke Create_<Event>.js. Tipe bertanda /* ? */ adalah tebakan - verifikasi manual.
+var SECTIONS = [
+  {
+    title: '🏆 REGISTRATION FUTSAL UNIVERSITAS - PORFIS 2026',
+    fields: [
+      { label: 'Nama Perwakilan', type: 'text', required: false },
+      { label: 'Asal Universitas', type: 'text', required: false },
+      { label: 'Nomor WhatsApp Perwakilan', type: 'phone', required: false }, /* ? verifikasi tipe */
+      { label: 'Bukti Pembayaran', type: 'file', required: true, description: 'Format doc: Asal Univ (ex: Esa Unggul Jakarta)' },
+      { label: 'Screenshoot Follow Ig @porfis.ueu', type: 'file', required: true }
+    ]
+  }
+];
+
+═══ 🏆 REGISTRATION FUTSAL SMA - PORFIS 2026  ═══
+VM183:362 1 section, 5 field.
+VM183:363 --- 1. RAW txt ---
+VM183:364 # Sumber: Google Form "🏆 REGISTRATION FUTSAL SMA - PORFIS 2026 "
+# Diekstrak otomatis oleh Tools/Extract_GForm.js - baris bertanda (?) adalah TEBAKAN tipe, verifikasi manual.
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+Section 1: 🏆 REGISTRATION FUTSAL SMA - PORFIS 2026 
+Nama Perwakilan (opsional)
+Isian singkat
+Asal Sekolah (opsional)
+Isian singkat
+Nomor WhatsApp Perwakilan (opsional)
+Isian singkat, validasi nomor (?)
+Bukti Pembayaran
+File upload - Format doc: Asal Sekolah (ex: SMAN 111 Jakarta)
+Screenshoot Follow Ig @porfis.ueu
+File upload
+
+VM183:365 --- 2. Tabled md ---
+VM183:366 # RAW — 🏆 REGISTRATION FUTSAL SMA - PORFIS 2026 
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+## Section 1: 🏆 REGISTRATION FUTSAL SMA - PORFIS 2026 
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaPerwakilan | Nama Perwakilan | text | false |  |
+| 2 | AsalSekolah | Asal Sekolah | text | false |  |
+| 3 | NomorWhatsAppPerwakilan | Nomor WhatsApp Perwakilan | phone (?) | false |  |
+| 4 | BuktiPembayaran | Bukti Pembayaran | file | true | Format doc: Asal Sekolah (ex: SMAN 111 Jakarta) |
+| 5 | ScreenshootFollowIgPorfisUeu | Screenshoot Follow Ig @porfis.ueu | file | true |  |
+
+VM183:367 --- 3. SECTIONS js ---
+VM183:368 // Digenerate dari Google Form "🏆 REGISTRATION FUTSAL SMA - PORFIS 2026 " oleh Tools/Extract_GForm.js
+// Tempel ke Create_<Event>.js. Tipe bertanda /* ? */ adalah tebakan - verifikasi manual.
+var SECTIONS = [
+  {
+    title: '🏆 REGISTRATION FUTSAL SMA - PORFIS 2026 ',
+    fields: [
+      { label: 'Nama Perwakilan', type: 'text', required: false },
+      { label: 'Asal Sekolah', type: 'text', required: false },
+      { label: 'Nomor WhatsApp Perwakilan', type: 'phone', required: false }, /* ? verifikasi tipe */
+      { label: 'Bukti Pembayaran', type: 'file', required: true, description: 'Format doc: Asal Sekolah (ex: SMAN 111 Jakarta)' },
+      { label: 'Screenshoot Follow Ig @porfis.ueu', type: 'file', required: true }
+    ]
+  }
+];
+
+═══ 🏆 REGISTRATION BASKET 3X3 PUTRI UNIVERSITAS - PORFIS 2026 ═══
+VM225:362 1 section, 5 field.
+VM225:363 --- 1. RAW txt ---
+VM225:364 # Sumber: Google Form "🏆 REGISTRATION BASKET 3X3 PUTRI UNIVERSITAS - PORFIS 2026"
+# Diekstrak otomatis oleh Tools/Extract_GForm.js - baris bertanda (?) adalah TEBAKAN tipe, verifikasi manual.
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+Section 1: 🏆 REGISTRATION BASKET 3X3 PUTRI UNIVERSITAS - PORFIS 2026
+Nama Perwakilan (opsional)
+Isian singkat
+Asal Universitas (opsional)
+Isian singkat
+Nomor WhatsApp Perwakilan (opsional)
+Isian singkat, validasi nomor (?)
+Bukti Pembayaran
+File upload - Format doc: Asal Univ (ex: Esa Unggul Jakarta)
+Screenshoot Follow Ig @porfis.ueu
+File upload
+
+VM225:365 --- 2. Tabled md ---
+VM225:366 # RAW — 🏆 REGISTRATION BASKET 3X3 PUTRI UNIVERSITAS - PORFIS 2026
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+## Section 1: 🏆 REGISTRATION BASKET 3X3 PUTRI UNIVERSITAS - PORFIS 2026
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaPerwakilan | Nama Perwakilan | text | false |  |
+| 2 | AsalUniversitas | Asal Universitas | text | false |  |
+| 3 | NomorWhatsAppPerwakilan | Nomor WhatsApp Perwakilan | phone (?) | false |  |
+| 4 | BuktiPembayaran | Bukti Pembayaran | file | true | Format doc: Asal Univ (ex: Esa Unggul Jakarta) |
+| 5 | ScreenshootFollowIgPorfisUeu | Screenshoot Follow Ig @porfis.ueu | file | true |  |
+
+VM225:367 --- 3. SECTIONS js ---
+VM225:368 // Digenerate dari Google Form "🏆 REGISTRATION BASKET 3X3 PUTRI UNIVERSITAS - PORFIS 2026" oleh Tools/Extract_GForm.js
+// Tempel ke Create_<Event>.js. Tipe bertanda /* ? */ adalah tebakan - verifikasi manual.
+var SECTIONS = [
+  {
+    title: '🏆 REGISTRATION BASKET 3X3 PUTRI UNIVERSITAS - PORFIS 2026',
+    fields: [
+      { label: 'Nama Perwakilan', type: 'text', required: false },
+      { label: 'Asal Universitas', type: 'text', required: false },
+      { label: 'Nomor WhatsApp Perwakilan', type: 'phone', required: false }, /* ? verifikasi tipe */
+      { label: 'Bukti Pembayaran', type: 'file', required: true, description: 'Format doc: Asal Univ (ex: Esa Unggul Jakarta)' },
+      { label: 'Screenshoot Follow Ig @porfis.ueu', type: 'file', required: true }
+    ]
+  }
+];
+
+═══ 🏆 REGISTRATION BASKET 3X3 PUTRA UNIVERSITAS - PORFIS 2026 ═══
+VM267:362 1 section, 5 field.
+VM267:363 --- 1. RAW txt ---
+VM267:364 # Sumber: Google Form "🏆 REGISTRATION BASKET 3X3 PUTRA UNIVERSITAS - PORFIS 2026"
+# Diekstrak otomatis oleh Tools/Extract_GForm.js - baris bertanda (?) adalah TEBAKAN tipe, verifikasi manual.
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+Section 1: 🏆 REGISTRATION BASKET 3X3 PUTRA UNIVERSITAS - PORFIS 2026
+Nama Perwakilan (opsional)
+Isian singkat
+Asal Universitas (opsional)
+Isian singkat
+Nomor WhatsApp Perwakilan (opsional)
+Isian singkat, validasi nomor (?)
+Bukti Pembayaran
+File upload - Format doc: Asal Univ (ex: Esa Unggul Jakarta)
+Screenshoot Follow Ig @porfis.ueu
+File upload
+
+VM267:365 --- 2. Tabled md ---
+VM267:366 # RAW — 🏆 REGISTRATION BASKET 3X3 PUTRA UNIVERSITAS - PORFIS 2026
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+## Section 1: 🏆 REGISTRATION BASKET 3X3 PUTRA UNIVERSITAS - PORFIS 2026
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaPerwakilan | Nama Perwakilan | text | false |  |
+| 2 | AsalUniversitas | Asal Universitas | text | false |  |
+| 3 | NomorWhatsAppPerwakilan | Nomor WhatsApp Perwakilan | phone (?) | false |  |
+| 4 | BuktiPembayaran | Bukti Pembayaran | file | true | Format doc: Asal Univ (ex: Esa Unggul Jakarta) |
+| 5 | ScreenshootFollowIgPorfisUeu | Screenshoot Follow Ig @porfis.ueu | file | true |  |
+
+VM267:367 --- 3. SECTIONS js ---
+VM267:368 // Digenerate dari Google Form "🏆 REGISTRATION BASKET 3X3 PUTRA UNIVERSITAS - PORFIS 2026" oleh Tools/Extract_GForm.js
+// Tempel ke Create_<Event>.js. Tipe bertanda /* ? */ adalah tebakan - verifikasi manual.
+var SECTIONS = [
+  {
+    title: '🏆 REGISTRATION BASKET 3X3 PUTRA UNIVERSITAS - PORFIS 2026',
+    fields: [
+      { label: 'Nama Perwakilan', type: 'text', required: false },
+      { label: 'Asal Universitas', type: 'text', required: false },
+      { label: 'Nomor WhatsApp Perwakilan', type: 'phone', required: false }, /* ? verifikasi tipe */
+      { label: 'Bukti Pembayaran', type: 'file', required: true, description: 'Format doc: Asal Univ (ex: Esa Unggul Jakarta)' },
+      { label: 'Screenshoot Follow Ig @porfis.ueu', type: 'file', required: true }
+    ]
+  }
+];
+
+═══ 🏆 REGISTRATION BASKET 3x3 SMA - PORFIS 2026 ═══
+VM310:362 1 section, 5 field.
+VM310:363 --- 1. RAW txt ---
+VM310:364 # Sumber: Google Form "🏆 REGISTRATION BASKET 3x3 SMA - PORFIS 2026"
+# Diekstrak otomatis oleh Tools/Extract_GForm.js - baris bertanda (?) adalah TEBAKAN tipe, verifikasi manual.
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+Section 1: 🏆 REGISTRATION BASKET 3x3 SMA - PORFIS 2026
+Nama Perwakilan (opsional)
+Isian singkat
+Asal Sekolah (opsional)
+Isian singkat
+Nomor WhatsApp Perwakilan (opsional)
+Isian singkat, validasi nomor (?)
+Bukti Pembayaran
+File upload - Format doc: Asal Sekolah (ex: SMAN 111 Jakarta)
+Screenshoot Follow Ig @porfis.ueu
+File upload
+
+VM310:365 --- 2. Tabled md ---
+VM310:366 # RAW — 🏆 REGISTRATION BASKET 3x3 SMA - PORFIS 2026
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+Halo, Champions! 👋🏻
+Sudah siap membawa tim kalian menjadi bagian dari Rise of Champions?
+PORFIS (Pekan Olahraga Fisioterapi) 2026 merupakan ajang kompetisi olahraga yang diselenggarakan oleh Badan Eksekutif Mahasiswa Fakultas Fisioterapi Universitas Esa Unggul sebagai wadah untuk meningkatkan sportivitas, mempererat tali persaudaraan, serta mengembangkan semangat kompetitif yang sehat melalui cabang olahraga Basket 3x3 dan Futsal.
+Open Registration: 8 Agustus 2026 - 12 Oktober 2026
+🏀 Basket 3x3 Putra & Putri 🏀  
+📅 Pelaksanaan: 24 Oktober 2026
+📍  Lokasi: Gor Grogol
+💲 Fee Registration:
+Basket 3x3 Sekolah: Rp. 300.000
+Basket 3x3 Univ Putra: Rp. 400.000
+Basket 3x3 Univ Putri: Rp. 400.000
+⚽ Futsal ⚽
+📅 Pelaksanaan: 26-28 Oktober 2026
+📍  Lokasi: Lapangan Universitas Esa Unggul Jakarta
+💲 Fee Registration: Futsal Sekolah: Rp. 400.000
+Futsal Univ: Rp. 500.000
+🏆 Benefit
+Prize Pool: Rp. 13.000.000 +
+Thropy
+Sertifikat
+💳 Pembayaran
+4061554160 BCA a.n. Sintia Ramadani
+📱Contact Person:
+085779244685 (Helena)
+08119723012 (Nadin)
+Pastikan seluruh data yang diisi sudah benar sebelum mengirim formulir. Terima kasih atas partisipasinya. Sampai bertemu di PORFIS 2026 – Rise of Champions! 🔥🔥
+
+## Section 1: 🏆 REGISTRATION BASKET 3x3 SMA - PORFIS 2026
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaPerwakilan | Nama Perwakilan | text | false |  |
+| 2 | AsalSekolah | Asal Sekolah | text | false |  |
+| 3 | NomorWhatsAppPerwakilan | Nomor WhatsApp Perwakilan | phone (?) | false |  |
+| 4 | BuktiPembayaran | Bukti Pembayaran | file | true | Format doc: Asal Sekolah (ex: SMAN 111 Jakarta) |
+| 5 | ScreenshootFollowIgPorfisUeu | Screenshoot Follow Ig @porfis.ueu | file | true |  |
+
+VM310:367 --- 3. SECTIONS js ---
+VM310:368 // Digenerate dari Google Form "🏆 REGISTRATION BASKET 3x3 SMA - PORFIS 2026" oleh Tools/Extract_GForm.js
+// Tempel ke Create_<Event>.js. Tipe bertanda /* ? */ adalah tebakan - verifikasi manual.
+var SECTIONS = [
+  {
+    title: '🏆 REGISTRATION BASKET 3x3 SMA - PORFIS 2026',
+    fields: [
+      { label: 'Nama Perwakilan', type: 'text', required: false },
+      { label: 'Asal Sekolah', type: 'text', required: false },
+      { label: 'Nomor WhatsApp Perwakilan', type: 'phone', required: false }, /* ? verifikasi tipe */
+      { label: 'Bukti Pembayaran', type: 'file', required: true, description: 'Format doc: Asal Sekolah (ex: SMAN 111 Jakarta)' },
+      { label: 'Screenshoot Follow Ig @porfis.ueu', type: 'file', required: true }
+    ]
+  }
+];
