@@ -119,6 +119,7 @@ Setelah `removeItem` + reload, **verifikasi draft benar-benar kosong** sebelum j
 ## File terkait
 
 ```
+ScriptTemplate/NeoVersion/Competition/Events/NewAdminUI/NEW_EVENT_WORKFLOW.md         — mulai dari sini kalau mau minta build event baru (kickoff prompt + urutan kerja lengkap)
 ScriptTemplate/NeoVersion/Competition/Events/NewAdminUI/README.md                    — dokumen ini
 ScriptTemplate/NeoVersion/Competition/Events/NewAdminUI/JSON/Create_ICGS_SingleTeam.js
 ScriptTemplate/NeoVersion/Competition/Events/NewAdminUI/JSON/Create_ICGS_DoubleTeam.js
