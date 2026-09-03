@@ -1,0 +1,138 @@
+Harga dan Estimasi Peserta
+
+Kegiatan / Lomba
+Timeline
+Harga Peserta
+Estimasi
+Fee Roetix (dipotong dari panitia)
+Diterima Panitia
+Lomba BMC (Batch 2)
+1–15 September 2026
+Rp60.000
+10–15 peserta
+Rp8.000
+Rp52.000
+Lomba UI/UX (Batch 2)
+1–15 September 2026
+Rp60.000
+10–15 peserta
+Rp8.000
+Rp52.000
+
+
+DATA FORM LUMINUX 2.0 UNESA 2026
+Section
+Information/question
+Keterangan
+Data Tim
+Nama Tim
+Isian singkat
+Cabang Lomba
+Option
+Business Model Canvas (BMC)
+UI/UX Design
+Asal Perguruan Tinggi
+Isian singkat
+Jumlah Anggota Tim
+Option
+2 Orang (1 Ketua + 1 Anggota)
+3 Orang (1 Ketua + 2 Anggota)
+Nomor WhatsApp Ketua Tim
+Isian singkat
+Email Ketua Tim
+Isian singkat
+Data Ketua Tim
+Nama Lengkap
+Isian singkat
+NIM
+Isian singkat
+Program Studi
+Isian singkat
+Username Instagram
+Isian singkat
+Upload KTM/KTMS
+Tambah File
+Upload Bukti Follow Instagram @himafortic_unesa dan @luminux_2.0
+Tambah File
+Link Postingan Twibbon
+Isian singkat
+Data Anggota 1
+Nama Lengkap
+Isian singkat
+NIM
+Isian singkat
+Program Studi
+Isian singkat
+Username Instagram
+Isian singkat
+Upload KTM/KTMS
+Tambah File
+Upload Bukti Follow Instagram @himafortic_unesa dan @luminux_2.0
+Tambah File
+Link Postingan Twibbon
+Isian singkat
+Data Anggota 2
+Nama Lengkap
+Isian singkat
+NIM
+Isian singkat
+Program Studi
+Isian singkat
+Username Instagram
+Isian singkat
+Upload KTM/KTMS
+Tambah File
+Upload Bukti Follow Instagram @himafortic_unesa dan @luminux_2.0
+Tambah File
+Link Postingan Twibbon
+Isian singkat
+Pernyataan dan Konfirmasi
+Pernyataan Peserta
+Checklist
+Saya menyatakan bahwa seluruh data yang saya isi adalah benar dan dapat dipertanggungjawabkan.
+Saya menyatakan bahwa seluruh anggota tim merupakan mahasiswa aktif (D3/D4/S1 atau sederajat).
+Seluruh anggota tim telah mengikuti akun Instagram @himafortic_unesa dan @luminux_2.0
+Seluruh anggota tim telah mengunggah twibbon dan menandai akun Instagram @luminux_2.0
+Saya telah membaca, memahami, dan menyetujui seluruh Guidebook serta syarat dan ketentuan LUMINUX 2.0.
+Saya memahami bahwa biaya pendaftaran yang telah dibayarkan tidak dapat dikembalikan apabila mengundurkan diri.
+Tim kami bersedia mengikuti seluruh rangkaian kompetisi sesuai ketentuan panitia.
+Apabila tim kami lolos menjadi finalis, kami bersedia mengikuti babak Grand Final secara offline.
+Saya memahami bahwa keputusan dewan juri dan panitia bersifat final dan tidak dapat diganggu gugat.
+Konfirmasi Pembayaran
+Konfirmasi Pendaftaran
+
+Terima kasih telah melengkapi formulir pendaftaran LUMINUX 2.0 UNESA 2026.
+
+Setelah formulir ini dikirim, silakan melakukan konfirmasi bahwa tim telah menyelesaikan pendaftaran kepada narahubung melalui WhatsApp berikut:
+
+Narahubung Konfirmasi Pendaftaran:
+ Berliana Nidia — https://wa.me/6285784149198
+
+Setelah menghubungi narahubung, kirimkan pesan dengan format pesan:
+
+Pembayaran_MetodePembayaran_NamaTim_NamaInstansi_CabangLomba 
+
+
+Catatan:
+Pastikan nama tim, nama instansi, dan cabang lomba sesuai dengan data yang telah diisi pada formulir pendaftaran agar proses verifikasi dapat dilakukan dengan mudah dan cepat.
+
+Tautan grup WhatsApp peserta akan diberikan setelah proses verifikasi selesai.
+
+Kami menantikan partisipasi terbaik Anda, Sampai jumpa di LUMINUX 2.0! ✨
+
+
+Jadi, form kami memiliki pertanyaan “Jumlah Anggota Tim” dengan 2 pilihan:
+- 2 Orang (1 Ketua + 1 Anggota)
+- 3 Orang (1 Ketua + 2 Anggota)
+
+Berdasarkan pilihan tersebut, section yang muncul akan berbeda:
+
+Jika pilih “2 Orang”:
+Data Tim - Data Ketua Tim - Data Anggota 1 - Pernyataan dan Konfirmasi
+(Section “Data Anggota 2” tidak muncul)
+
+Jika pilih “3 Orang”:
+Data Tim - Data Ketua Tim - Data Anggota 1 - Data Anggota 2 - Pernyataan dan Konfirmasi
+(Semua section muncul lengkap)
+
+Jadi, intinya section “Data Anggota 2” bersifat conditional, hanya muncul apabila peserta memilih opsi 3 orang.

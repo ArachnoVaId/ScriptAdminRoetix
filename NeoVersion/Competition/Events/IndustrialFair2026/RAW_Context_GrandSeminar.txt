@@ -1,0 +1,84 @@
+# RAW — Registration Form Industrial Fair Seminar
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+Hi, Infairians! 👋
+Are you ready to discover how strategic energy efficiency and high-impact operations can drive greater productivity? ⚡💡
+The INFAIR Seminar 2026 is your opportunity to gain exclusive insights from government and industry leaders on how smarter, more efficient operations can contribute to accelerating national productivity.
+Designed for students and future professionals, this seminar will take you closer to real-world strategies, industry perspectives, and innovative approaches to building a more efficient and productive industrial future. Don’t just learn about the future-be part of driving it! 🚀
+Event Details
+📅 Date: Wednesday, September 23th, 2026
+⏰ Time: 08.00 - Done
+📍 Platform: Aula Bhinneka Tunggal Ika UPN “Veteran” Jakarta, Pondok Labu
+What Will You Get?
+Gain insights from government & industry leaders
+Discover strategies for energy-efficient operations
+Participate in interactive discussions
+Expand your professional network
+Receive an e-certificate
+How to Join?
+Follow @industrialfair
+Tag 3 Person at Industrial Fair Open Registration Poster
+Repost on Story Industrial Fair Open Registration Poster
+Fill out this registration form.
+❗Don’t miss this chance to learn, connect, and grow‼️
+✍️ Save the date and join the INFAIR Seminar 2026: Driving Strategic Energy-Efficiency through High Impact Operation to Accelerate National Productivity
+📞 Contact Person: Angel Sesilia Sinaga (+62 878-9427-9631)
+Best regards, 
+Industrial Fair 2026 Team
+
+## Section 1: Registration Form Industrial Fair Seminar
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | YourEmailAddressPleaseMakeSureYourEmailI | Your Email Address  Please make sure your email is verified | email (?) | true |  |
+
+## Section 2: Participant Information
+
+Get to know you! Tell us a little about yourself and how you discovered this event!
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | WhereAreYouFrom | Where Are You From? | multiple_choice | true |  | Internal, Eksternal |
+
+## Section 3: Participant Information
+
+Get to know you! Tell us a little about yourself and how you discovered this event!
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | WhatSYourNamePleaseFillAFullNameEGAngelS | What's your name? Please fill a full name e.g., Angel Sesilia | text | true |  |
+| 2 | WhatSYourNicknameEGAngel | What's your nickname? e.g., Angel | text | true |  |
+| 3 | WhatIsYourUniversityInstitutionEGUPNVete | What is your university/institution? e.g., UPN "Veteran" Jakarta | text | true |  |
+| 4 | WhatIsYouMajorEGIndustrialEngineering | What is you major?  e.g., Industrial Engineering | text | true |  |
+| 5 | WhatIsYourNIMEG251xxxxxxx | What is your NIM? e.g.,251xxxxxxx | text | true |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 6 | Batch | Batch? | multiple_choice | true |  | 2022, 2023, 2024, 2025, 2026 |
+
+## Section 4: Registration Requirements
+
+Please upload the screenshots of your proof of requirements 
+Following IG of Infair https://www.instagram.com/industrialfair/
+Tagging 3 friends in (link soon)
+Reposting to story (link soon)
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | PleaseUploadYourProofOfRequirementsInPDF | Please upload your proof of requirements in PDF format. File name format: Proof_YourName  Ex: Proof_AngelSesilia.pdf | file | true |  |
+
+## Section 5: You’re All Set, Infairians! 💫
+
+You’ve successfully secured your spot at INFAIR SEMINAR 2026! 🌱✨
+⚠️ IMPORTANT NEXT STEP: Please make sure to join our WhatsApp Community Group through the link below to get the main room access link, live event updates, and connect with fellow participants: 
+👉 [Insert Link Group WA] (Link soon)
+Get ready to learn, connect, and transform your insights with us. See you at the seminar! 💡💚
+
+_Info-only section (tanpa field)._

@@ -1,0 +1,56 @@
+# RAW — Company Visit Industrial Fair 2026
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+Greetings, Future Leaders!
+  
+Industrial Fair 2026 is thrilled to invite you to an exclusive Company Visit to Indosat—a unique opportunity to explore the dynamic world of telecommunications and digital technology. With the theme of "......," this visit offers a firsthand look into Indosat's cutting-edge strategies and industry-leading innovations in Indonesia's telecommunication sector. It’s a valuable chance to connect, learn, and gain inspiration from one of Indonesia’s top digital and telecommunications giants. Don’t miss this exceptional experience!  
+
+Event details:
+Date: Friday, October 16th 2026
+Time: 09.00 - 11.20 WIB
+Place: Indosat Marvelous Xperience Center, Jl. Medan Merdeka Barat No.21, Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10110, Indonesia
+
+If you have any questions, feel free to contact our contact persons:
+👤 Ayu Putri Rizqiarti
+LINE ID: 
+WhatsApp: (+62) 
+👤 Nabila Aisyah
+LINE ID: 
+WhatsApp: (+62) 
+
+Warm Regards,
+Industrial Fair 2026
+Bridging Knowledge, Driving Effective Solutions
+
+## Section 1: Personal Information
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | FullNameEGOliviaRoseAnderson | Full Name *e.g.  Olivia Rose Anderson | text | true |  |
+| 2 | PhoneNumberUse62EG628xxxxxxxxxx | Phone Number use (+62) (e.g +628xxxxxxxxxx) | phone (?) | true |  |
+| 3 | MajorEGIndustrialEngineering | Major *e.g. Industrial Engineering | text | true |  |
+| 4 | UniversityEGUniversitasPembangunanNasion | University *e.g. Universitas Pembangunan Nasional "Veteran" Jakarta | text | true |  |
+
+## Section 2: Agreement
+
+Please read and agree to the following commitments!  
+1. I agree to attend the Indosat company visit on October 16th punctually.  
+2. I agree to actively participate in all activities throughout the Indosat Company Visit.
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | DoYouAgreeWithTheCommitmentsListedAbove | Do you agree with the commitments listed above? | multiple_choice | true |  | Yes, I agree, No, I do not agree |
+| 2 | WillYouBeAbleToAttendTheEventOnOctober16 | Will you be able to attend the event on October 16th from 09.00 - 11.20 WIB? | multiple_choice | true |  | Yes, I can attend, No, I cannot attend |
+
+## Section 3: Non-Attendance Reason
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | IfYouCannotAttendPleaseSpecifyTheReason | If you cannot attend, please specify the reason | text | true |  |
