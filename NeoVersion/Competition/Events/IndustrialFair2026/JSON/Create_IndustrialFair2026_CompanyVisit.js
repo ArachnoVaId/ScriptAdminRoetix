@@ -1,7 +1,7 @@
 // NEW ADMIN UI (admin.roetix.com/events/create) - INDUSTRIAL FAIR 2026 - Company Visit Indosat
 // Companion doc: ../../NewAdminUI/README.md (catatan DOM).
 // Engine: sama dengan ../../LUMINUX2.0/JSON/Create_LUMINUX2026.js dan ../../PORFIS2026/JSON/*
-//   (1 Phase x 1 Timeline + pre-flight cek draft + guard STOP per step), mekanisme Options versi baru
+//   (pre-flight cek draft + guard STOP per step), mekanisme Options versi baru
 //   dari ../../StudentPreneur26/JSON/Create_UISP2026_BMCC.js.
 // Data source: ../RAW_Context_Compvis.txt (hasil ekstraksi Google Form)
 //
@@ -22,12 +22,17 @@
 //      + FEE_ROETIX dan tentukan dulu skemanya:
 //        ON-TOP (PORFIS/COMMSPACE/SRD/UISP): price = harga panitia, fee ditambahkan -> peserta bayar price + fee
 //        INKLUSIF (SilverParade/LUMINUX):    price = harga poster - fee -> peserta bayar persis harga poster
-//   b. TANGGAL PENDAFTARAN. RAW cuma memuat tanggal ACARA (16 Oktober 2026, 09.00-11.20 WIB), tidak
-//      ada tanggal buka/tutup pendaftaran. PHASE & TIMELINE di bawah DIASUMSIKAN 3 September -
-//      14 Oktober 2026 (tutup 2 hari sebelum acara). Ganti dengan tanggal resmi panitia.
+//   b. TANGGAL PENDAFTARAN - SUDAH DIKONFIRMASI PANITIA (2026-09-03), DUA GELOMBANG:
+//        Normal Registration : 21 September - 2 Oktober 2026
+//        Extend Registration : 3 Oktober - 6 Oktober 2026
+//      Bukan lagi asumsi. (Acara sendiri 16 Oktober 2026, 09.00-11.20 WIB.)
+//      Karena ada 2 gelombang, script ini memakai 1 Phase x 2 Timeline - lihat keputusan 8.
 //   c. TEMA acara masih "......" di RAW (panitia belum mengisinya) - lihat EVENT_DESCRIPTION.
-//   d. KONTAK PERSON. RAW mencantumkan nama Ayu Putri Rizqiarti & Nabila Aisyah tapi LINE ID dan
-//      nomor WhatsApp-nya KOSONG. Nomor di EVENT_DESCRIPTION & COMPLETION_MESSAGE masih placeholder.
+//   d. KONTAK PERSON - NOMOR WHATSAPP SUDAH DIISI (dikonfirmasi panitia 2026-09-03):
+//        Ayu Putri     : +62 851-6121-5610
+//        Nabila Aisyah : +62 821-1331-0636
+//      LINE ID keduanya masih kosong di RAW dan TIDAK ditanyakan - kalau panitia mau LINE juga
+//      ditampilkan, tambahkan sendiri di EVENT_DESCRIPTION.
 //
 // KEPUTUSAN atas sumber (didokumentasikan, bukan diam-diam):
 //   1. Section 3 "Non-Attendance Reason" dibuat OPSIONAL (required: false), padahal RAW menandainya
@@ -49,6 +54,16 @@
 //      judul, tapi labelnya eksplisit minta format +62 jadi tipe phone sudah tepat.
 //   6. Team size platform dibiarkan OFF (default Step 2 States) - pendaftaran ini per individu.
 //   7. Tidak ada field upload/bukti pembayaran, konsisten dengan keputusan (a): event di-set gratis.
+//   8. DUA TIMELINE (Normal + Extend) di bawah SATU Phase, bukan dua event terpisah. Alasannya kedua
+//      gelombang memakai form dan HARGA yang sama - yang berbeda cuma jendela waktunya - jadi tidak
+//      ada alasan memecah event (beda dari BNAT XV, yang harganya memang beda per kategori).
+//      PERHATIAN: menurut NewAdminUI/README.md, matrix Time-Price >1x1 indeksnya "kelipatan per sel"
+//      (numberInputs[i*3] / selects[i*2]) dan BELUM PERNAH DIVERIFIKASI LIVE SAMPAI TUNTAS. Proses
+//      menambah Timeline-nya sendiri sudah terverifikasi (StudentPreneur26, 3 Timeline sekaligus),
+//      yang belum cuma pemetaan sel harganya. Di event ini risikonya kecil karena kedua sel sama-sama
+//      GRATIS (price 0, fee 0), tapi TETAP cocokkan manual di layar Step 4 > Time-Price bahwa baris
+//      "Normal Registration" dan "Extend Registration" dua-duanya menunjukkan angka yang benar
+//      sebelum klik "Create event". Kalau nanti event ini jadi berbayar, pencocokan manual itu WAJIB.
 //
 // TODO manual setelah script jalan: upload banner event di Step 1 (input file, tidak bisa diisi script).
 
@@ -69,16 +84,20 @@ var EVENT_DESCRIPTION = [
   'Place : Indosat Marvelous Xperience Center, Jl. Medan Merdeka Barat No.21, Gambir, Jakarta Pusat,',
   '        DKI Jakarta 10110, Indonesia',
   '',
+  'Registration period:',
+  '- Normal Registration : September 21st - October 2nd, 2026',
+  '- Extend Registration : October 3rd - October 6th, 2026',
+  '',
   'Contact persons:',
-  '- Ayu Putri Rizqiarti  | WhatsApp: (TODO - nomor belum diisi panitia di RAW)',
-  '- Nabila Aisyah        | WhatsApp: (TODO - nomor belum diisi panitia di RAW)',
+  '- Ayu Putri Rizqiarti  | WhatsApp: +62 851-6121-5610',
+  '- Nabila Aisyah        | WhatsApp: +62 821-1331-0636',
   '',
   'Warm Regards,',
   'Industrial Fair 2026',
   'Bridging Knowledge, Driving Effective Solutions',
   '',
   'TODO: RAW menulis tema acara sebagai "......" - minta tema resmi ke panitia lalu sisipkan di',
-  'paragraf pembuka. Lengkapi juga LINE ID / nomor WhatsApp kedua narahubung.'
+  'paragraf pembuka.'
 ].join('\n');
 
 var IDENTITY = {
@@ -88,9 +107,13 @@ var IDENTITY = {
   description: EVENT_DESCRIPTION
 };
 
-// ASUMSI - lihat catatan (b) di header. RAW hanya punya tanggal ACARA, bukan tanggal pendaftaran.
-var PHASE = { name: 'Registration', start: '2026-09-03T00:00', end: '2026-10-14T23:59' };
-var TIMELINE = { name: 'Registration', start: '2026-09-03T00:00', end: '2026-10-14T23:59' };
+// Dikonfirmasi panitia 2026-09-03. Satu Phase membentang penuh, dua Timeline di dalamnya - lihat
+// keputusan 8 di header.
+var PHASE = { name: 'Open Registration', start: '2026-09-21T00:00', end: '2026-10-06T23:59' };
+var TIMELINES = [
+  { name: 'Normal Registration', start: '2026-09-21T00:00', end: '2026-10-02T23:59' },
+  { name: 'Extend Registration', start: '2026-10-03T00:00', end: '2026-10-06T23:59' }
+];
 
 // GRATIS - lihat catatan (a) di header. RAW tidak menyebut biaya sama sekali; angka 0 dipakai supaya
 // tidak ada harga karangan yang lolos ke produksi. Kalau berbayar, tentukan dulu skema on-top vs
@@ -117,8 +140,8 @@ var COMPLETION_MESSAGE = [
   '',
   'Further information will be shared by our committee before the event. If you have any questions,',
   'feel free to reach our contact persons:',
-  '- Ayu Putri Rizqiarti  | WhatsApp: (TODO)',
-  '- Nabila Aisyah        | WhatsApp: (TODO)',
+  '- Ayu Putri Rizqiarti  | WhatsApp: +62 851-6121-5610',
+  '- Nabila Aisyah        | WhatsApp: +62 821-1331-0636',
   '',
   'Warm Regards,',
   'Industrial Fair 2026',
@@ -365,49 +388,64 @@ async function addSectionsAndFields(sections) {
   return true;
 }
 
-// ===================== STEP 4b - TIMELINE =====================
+// ===================== STEP 4b - TIMELINE (N timeline) =====================
+// Klik "Add Timeline" berulang sudah terverifikasi live (README: StudentPreneur26, 3 Timeline).
+// Tiap klik menambah timeline baru DI BAWAH, jadi input yang baru selalu yang TERAKHIR di DOM.
 
-async function fillTimeline(cfg) {
-  console.log('%c=== Step 4: Chrononomics > Timeline ===', 'color:#6366f1;font-weight:bold');
+async function fillTimelines(list) {
+  console.log('%c=== Step 4: Chrononomics > Timeline (' + list.length + ' timeline) ===', 'color:#6366f1;font-weight:bold');
   clickByText('button', 'Timeline');
   await sleep(300);
 
-  var addTimelineBtn = Array.from(document.querySelectorAll('button')).find(function (b) { return b.textContent.trim() === 'Add Timeline'; });
-  if (!addTimelineBtn) { console.error('STOP: tombol "Add Timeline" tidak ditemukan.'); return false; }
-  addTimelineBtn.click();
-  await sleep(400);
+  for (var i = 0; i < list.length; i++) {
+    var cfg = list[i];
+    var addTimelineBtn = Array.from(document.querySelectorAll('button')).find(function (b) { return b.textContent.trim() === 'Add Timeline'; });
+    if (!addTimelineBtn) { console.error('STOP: tombol "Add Timeline" tidak ditemukan (timeline ke-' + (i + 1) + ').'); return false; }
+    addTimelineBtn.click();
+    await sleep(400);
 
-  var nameInput = Array.from(document.querySelectorAll('input')).find(function (i) { return i.type === 'text' && i.placeholder === 'New Timeline'; });
-  var dt = Array.from(document.querySelectorAll('input[type="datetime-local"]'));
-  if (!nameInput || dt.length < 2) { console.error('STOP: input Timeline tidak lengkap. Isi manual.'); return false; }
-  fillInput(nameInput, cfg.name);
-  fillInput(dt[dt.length - 2], cfg.start);
-  fillInput(dt[dt.length - 1], cfg.end);
-  console.log('Timeline:', cfg.name, cfg.start, '->', cfg.end);
+    var names = Array.from(document.querySelectorAll('input')).filter(function (x) { return x.type === 'text' && x.placeholder === 'New Timeline'; });
+    var dt = Array.from(document.querySelectorAll('input[type="datetime-local"]'));
+    if (names.length !== i + 1 || dt.length < (i + 1) * 2) {
+      console.error('STOP: setelah klik Add Timeline ke-' + (i + 1) + ', DOM tidak sesuai (name=' + names.length + ', datetime=' + dt.length + '). Isi manual.');
+      return false;
+    }
+    fillInput(names[names.length - 1], cfg.name);
+    fillInput(dt[dt.length - 2], cfg.start);
+    fillInput(dt[dt.length - 1], cfg.end);
+    console.log('Timeline ' + (i + 1) + ':', cfg.name, cfg.start, '->', cfg.end);
+  }
   return true;
 }
 
-// ===================== STEP 4c - TIME-PRICE (1 Phase x 1 Timeline - indeks sudah terverifikasi) ====
+// ===================== STEP 4c - TIME-PRICE (1 Phase x N Timeline) =====================
+// PERHATIAN: untuk N > 1 pemetaan sel BELUM diverifikasi live (README). Harga di event ini sama
+// untuk semua sel (gratis), jadi salah-petakan pun angkanya identik - tapi tetap cocokkan di layar.
 
-async function fillTimePrice(cfg) {
+async function fillTimePrice(cfg, cellCount) {
   console.log('%c=== Step 4: Chrononomics > Time-Price ===', 'color:#6366f1;font-weight:bold');
   clickByText('button', 'Time-Price');
   await sleep(400);
 
   var numberInputs = Array.from(document.querySelectorAll('input[type="number"]'));
   var selects = Array.from(document.querySelectorAll('select'));
-  if (numberInputs.length < 3 || selects.length < 2) {
-    console.error('STOP: matrix Time-Price tidak lengkap (number=' + numberInputs.length + ', select=' + selects.length + '). Isi manual.');
+  if (numberInputs.length < cellCount * 3 || selects.length < cellCount * 2) {
+    console.error('STOP: matrix Time-Price tidak lengkap untuk ' + cellCount + ' sel (number=' + numberInputs.length + ' butuh ' + (cellCount * 3) + ', select=' + selects.length + ' butuh ' + (cellCount * 2) + '). Isi manual.');
     return false;
   }
 
-  fillInput(numberInputs[0], String(cfg.price));    // Price
-  fillSelect(selects[0], cfg.feeType);              // Service fee type
-  fillInput(numberInputs[1], String(cfg.fee));      // Service fee value
-  fillSelect(selects[1], cfg.taxType);              // Tax type
-  fillInput(numberInputs[2], String(cfg.tax));      // Tax value
-  console.log('Price:', cfg.price, '| fee:', cfg.feeType, cfg.fee, '| tax:', cfg.taxType, cfg.tax);
-  console.warn('%cCEK ANGKA DI LAYAR: total yang dibayar peserta HARUS Rp' + HARGA_PESERTA + '. Kalau yang tampil Rp' + (HARGA_PESERTA + FEE_ROETIX) + ', platform memperlakukan fee sebagai on-top - lihat blok FEE SCHEMA di header script.', 'color:#ef4444;font-weight:bold');
+  for (var i = 0; i < cellCount; i++) {
+    fillInput(numberInputs[i * 3], String(cfg.price));        // Price
+    fillSelect(selects[i * 2], cfg.feeType);                  // Service fee type
+    fillInput(numberInputs[i * 3 + 1], String(cfg.fee));      // Service fee value
+    fillSelect(selects[i * 2 + 1], cfg.taxType);              // Tax type
+    fillInput(numberInputs[i * 3 + 2], String(cfg.tax));      // Tax value
+    console.log('Sel ' + (i + 1) + ' -> price:', cfg.price, '| fee:', cfg.feeType, cfg.fee, '| tax:', cfg.taxType, cfg.tax);
+  }
+  if (cellCount > 1) {
+    console.warn('%cMATRIX ' + cellCount + ' SEL: pemetaan indeks per sel BELUM diverifikasi live (README). Cocokkan manual di layar bahwa tiap baris Timeline menunjukkan angka yang benar sebelum klik "Create event".', 'color:#ef4444;font-weight:bold');
+  }
+  console.warn('%cCEK ANGKA DI LAYAR: total yang dibayar peserta HARUS Rp' + HARGA_PESERTA + '.', 'color:#ef4444;font-weight:bold');
   return true;
 }
 
@@ -434,10 +472,10 @@ async function reportReview() {
     ? 'GRATIS (price 0 / fee 0 - ASUMSI, RAW tidak menyebut biaya)'
     : 'Rp' + HARGA_PESERTA + ' (panitia terima Rp' + TIME_PRICE.price + ', fee Roetix Rp' + TIME_PRICE.fee + ')';
   console.log(ready
-    ? '%cREADY -> "Everything looks good." Cek dulu: ' + TOTAL_FIELDS + ' field, ' + SECTIONS.length + ' section, 1 Phase, 1 Timeline, harga ' + hargaTeks + '.'
+    ? '%cREADY -> "Everything looks good." Cek dulu: ' + TOTAL_FIELDS + ' field, ' + SECTIONS.length + ' section, 1 Phase, ' + TIMELINES.length + ' Timeline, harga ' + hargaTeks + '.'
     : '%cNOT READY -> baca pesan "Not ready to finish - missing: ..." di layar. Kalau ada key ber-suffix "_2", berarti draft event sebelumnya belum dibersihkan: localStorage.removeItem(\'roetix:competition-draft\'); location.reload();',
     'color:' + (ready ? '#22c55e' : '#ef4444') + ';font-weight:bold;font-size:13px');
-  console.warn('%cSEBELUM KLIK "Create event" - 4 data ini TIDAK ADA di RAW dan masih placeholder: (1) HARGA di-set gratis, konfirmasi ke panitia berbayar atau tidak; (2) tanggal pendaftaran 3 Sep - 14 Okt 2026 masih ASUMSI (RAW cuma punya tanggal acara 16 Okt); (3) tema acara masih "......"; (4) LINE ID / nomor WhatsApp narahubung masih kosong di EVENT_DESCRIPTION dan COMPLETION_MESSAGE. Plus: upload banner event di Step 1.', 'color:#f59e0b;font-weight:bold');
+  console.warn('%cSEBELUM KLIK "Create event" - 4 data ini TIDAK ADA di RAW dan masih placeholder: (1) HARGA di-set gratis, konfirmasi ke panitia berbayar atau tidak; (2) tema acara masih "......" di RAW, minta tema resmi ke panitia; (3) COCOKKAN MANUAL di Step 4 > Time-Price bahwa kedua Timeline (Normal & Extend) menunjukkan angka yang benar - pemetaan sel matrix >1x1 belum diverifikasi live. Tanggal pendaftaran (21 Sep - 2 Okt normal, 3 - 6 Okt extend) dan nomor WhatsApp narahubung sudah dikonfirmasi panitia. Plus: upload banner event di Step 1.', 'color:#f59e0b;font-weight:bold');
 }
 
 // ===================== RUN =====================
@@ -450,8 +488,8 @@ async function reportReview() {
   await visitStates();
   if (!await fillPhase(PHASE)) return abort('Step 4 Phase');
   if (!await addSectionsAndFields(SECTIONS)) return abort('Step 4 Sections/Fields');
-  if (!await fillTimeline(TIMELINE)) return abort('Step 4 Timeline');
-  if (!await fillTimePrice(TIME_PRICE)) return abort('Step 4 Time-Price');
+  if (!await fillTimelines(TIMELINES)) return abort('Step 4 Timeline');
+  if (!await fillTimePrice(TIME_PRICE, TIMELINES.length)) return abort('Step 4 Time-Price');
   if (!await fillCompletion(COMPLETION_MESSAGE)) return abort('Step 5 Completion');
   await reportReview();
   console.log('%cSelesai. Belum ada yang tersimpan - review Step 7, lalu klik "Create event" sendiri.', 'color:#22c55e;font-weight:bold');

@@ -1,0 +1,309 @@
+# RAW — Registrasi Ulang BINUS National Accounting Tournament (BNAT) XV 2026
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+📢 RE-REGISTRATION BNAT XV 2026 📢
+
+Hello, Future Risk Strategists!! 👋📊
+
+✨ Selamat kepada seluruh tim yang berhasil lolos ke tahap Semifinal! 👏
+Kami juga mengucapkan terima kasih kepada seluruh peserta yang telah berpartisipasi dan menjadi bagian dari perjalanan BNAT XV 2026. Tetap semangat, jadikan setiap pengalaman sebagai kesempatan untuk terus berkembang dan mengasah kemampuan kalian! 💪
+
+⚡ But wait, your journey doesn’t stop here!
+
+Bagi tim yang lolos, jangan lupa untuk melanjutkan ke tahap berikutnya, yaitu REGISTRASI ULANG untuk mengamankan posisi tim kalian dan melanjutkan perjuangan menuju babak selanjutnya! 🏆
+
+🗓️ Periode Registrasi Ulang: 1-3 Oktober 2026
+📝 Form Registrasi Ulang: bit.ly/REGISTRASIULANGBNATXV2026
+
+📗 Informasi lengkap mengenai alur perlombaan dan ketentuan registrasi ulang dapat diakses melalui:
+https://linktr.ee/BNATXV2026
+
+☎️ Contact Person:
+📒 YAC
+👤 Mussadiq Al Fahmi (Fahmi)
+WhatsApp: 0858-0101-6922
+LINE: fahmi.mussadiq
+
+👤 Sevilla Reyva Arzita (Sevilla)
+WhatsApp: 0878-3066-2568
+LINE: dhiraxs
+
+📘 ACC
+👤 Valerie Regina Santiko (Valerie)
+WhatsApp: 0858-1310-3977
+LINE: jayylluv
+
+👤 Jess Milly Pangestu (Jess)
+WhatsApp: 0812-6888-2191
+LINE: jessmilly_
+
+📲 Find us through:
+📸 Instagram: @bnat.id @himabinus
+🎥 TikTok: @hima.binus
+YouTube: HIMA BINUS
+
+🎯 This is only the beginning!
+Pastikan timmu sudah melakukan registrasi ulang dan siap menghadapi tantangan berikutnya! 
+
+#BNATXV2026 #HIMABINUS #AccountingCompetition #KompetisiNasional #LombaAkuntansi
+
+## Section 1: Registrasi Ulang BINUS National Accounting Tournament (BNAT) XV 2026
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | TipeKompetisiCompetitionType | Tipe Kompetisi (Competition Type) | multiple_choice | true |  | Youth Accounting Competition (YAC), Accounting Case Competition (ACC) |
+
+## Section 2: Informasi Tim Accounting Case Competition (ACC)
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaUniversitasUniversityName | Nama Universitas (University Name) | text | true | Harap tidak menuliskan nama universitas dalam bentuk singkatan |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 2 | NamaTimTeamName | Nama Tim (Team Name) | multiple_choice | true |  | Nama Tim 1, Nama Tim 2, Nama Tim 3, Nama Tim 4, Nama Tim 5, Nama Tim 6, Nama Tim 7, Nama Tim 8, Nama Tim 9, Nama Tim 10, Nama Tim 11, Nama Tim 12, Nama Tim 13, Nama Tim 14, Nama Tim 15 |
+
+## Section 3: Data Diri Ketua Tim
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | LeaderNamaLengkapFullName | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | LeaderNomorIndukMahasiswaNIM | Nomor Induk Mahasiswa (NIM) | text | true |  |
+| 3 | LeaderEmailBINUSBINUSEmail | Email BINUS (BINUS Email) | email (?) | true | Hanya berlaku bagi BINUSIAN. Bagi Non-BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | LeaderEmailPribadiPersonalEmail | Email Pribadi (Personal Email) | email (?) | true | Hanya berlaku bagi Non-BINUSIAN. Bagi BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@gmail.com |
+| 5 | LeaderIDLINELINEID | ID LINE (LINE ID) | text | true |  |
+| 6 | LeaderNomorWhatsAppWhatsAppNumber | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 4: Pendataan Konsumsi & Penyakit
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaYaTuliskanAlergiAtauPantanganYangAnd | Jika ya, tuliskan alergi atau pantangan yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+| 2 | JikaYaTuliskanRiwayatPenyakitYangAndaMil | Jika ya, tuliskan riwayat penyakit yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaSeorangVeganVegetarian | Apakah Anda seorang vegan/vegetarian? | multiple_choice | true |  | Ya, Tidak |
+| 4 | ApakahAndaMemilikiAlergiAtauPantanganTer | Apakah Anda memiliki alergi atau pantangan terhadap makanan? | multiple_choice | true |  | Ya, Tidak |
+| 5 | ApakahAndaMemilikiRiwayatPenyakitTertent | Apakah Anda memiliki riwayat penyakit tertentu? | multiple_choice | true |  | Ya, Tidak |
+
+## Section 5: Data Diri Anggota Tim 1
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM | Nomor Induk Mahasiswa (NIM) | text | true |  |
+| 3 | EmailBINUSBINUSEmail | Email BINUS (BINUS Email) | email (?) | true | Hanya berlaku bagi BINUSIAN. Bagi Non-BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | EmailPribadiPersonalEmail | Email Pribadi (Personal Email) | email (?) | true | Hanya berlaku bagi Non-BINUSIAN. Bagi BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@gmail.com |
+| 5 | IDLINELINEID | ID LINE (LINE ID) | text | true |  |
+| 6 | NomorWhatsAppWhatsAppNumber | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 6: Pendataan Konsumsi & Penyakit
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaYaTuliskanAlergiAtauPantanganYangAnd2 | Jika ya, tuliskan alergi atau pantangan yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+| 2 | JikaYaTuliskanRiwayatPenyakitYangAndaMil2 | Jika ya, tuliskan riwayat penyakit yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaSeorangVeganVegetarian2 | Apakah Anda seorang vegan/vegetarian? | multiple_choice | true |  | Ya, Tidak |
+| 4 | ApakahAndaMemilikiAlergiAtauPantanganTer2 | Apakah Anda memiliki alergi atau pantangan terhadap makanan? | multiple_choice | true |  | Ya, Tidak |
+| 5 | ApakahAndaMemilikiRiwayatPenyakitTertent2 | Apakah Anda memiliki riwayat penyakit tertentu? | multiple_choice | true |  | Ya, Tidak |
+
+## Section 7: Data Diri Anggota Tim 2
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName2 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM2 | Nomor Induk Mahasiswa (NIM) | text | true |  |
+| 3 | EmailBINUSBINUSEmail2 | Email BINUS (BINUS Email) | email (?) | true | Hanya berlaku bagi BINUSIAN. Bagi Non-BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | EmailPribadiPersonalEmail2 | Email Pribadi (Personal Email) | email (?) | true | Hanya berlaku bagi Non-BINUSIAN. Bagi BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@gmail.com |
+| 5 | IDLINELINEID2 | ID LINE (LINE ID) | text | true |  |
+| 6 | NomorWhatsAppWhatsAppNumber2 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 8: Pendataan Konsumsi & Penyakit
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaYaTuliskanAlergiAtauPantanganYangAnd3 | Jika ya, tuliskan alergi atau pantangan yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+| 2 | JikaYaTuliskanRiwayatPenyakitYangAndaMil3 | Jika ya, tuliskan riwayat penyakit yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaSeorangVeganVegetarian3 | Apakah Anda seorang vegan/vegetarian? | multiple_choice | true |  | Ya, Tidak |
+| 4 | ApakahAndaMemilikiAlergiAtauPantanganTer3 | Apakah Anda memiliki alergi atau pantangan terhadap makanan? | multiple_choice | true |  | Ya, Tidak |
+| 5 | ApakahAndaMemilikiRiwayatPenyakitTertent3 | Apakah Anda memiliki riwayat penyakit tertentu? | multiple_choice | true |  | Ya, Tidak |
+
+## Section 9: Informasi Tim Youth Accounting Competition (YAC)
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaSekolahSchoolName | Nama Sekolah (School Name) | text | true | Harap tidak menuliskan nama sekolah dalam bentuk singkatan |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 2 | NamaTimTeamName2 | Nama Tim (Team Name) | multiple_choice | true |  | Nama Tim 1, Nama Tim 2, Nama Tim 3, Nama Tim 4, Nama Tim 5, Nama Tim 6, Nama Tim 7, Nama Tim 8, Nama Tim 9, Nama Tim 10, Nama Tim 11, Nama Tim 12, Nama Tim 13, Nama Tim 14, Nama Tim 15 |
+
+## Section 10: Data Diri Ketua Tim
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | LeaderNamaLengkapFullName2 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | LeaderNomorIndukSiswaNasionalNISN | Nomor Induk Siswa Nasional (NISN) | text | true |  |
+| 3 | LeaderEmailPribadiPersonalEmail2 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | LeaderIDLINELINEID2 | ID LINE (LINE ID) | text | true |  |
+| 5 | LeaderNomorWhatsAppWhatsAppNumber2 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 11: Pendataan Konsumsi & Penyakit
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaYaTuliskanAlergiAtauPantanganYangAnd4 | Jika ya, tuliskan alergi atau pantangan yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+| 2 | JikaYaTuliskanRiwayatPenyakitYangAndaMil4 | Jika ya, tuliskan riwayat penyakit yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaSeorangVeganVegetarian4 | Apakah Anda seorang vegan/vegetarian? | multiple_choice | true |  | Ya, Tidak |
+| 4 | ApakahAndaMemilikiAlergiAtauPantanganTer4 | Apakah Anda memiliki alergi atau pantangan terhadap makanan? | multiple_choice | true |  | Ya, Tidak |
+| 5 | ApakahAndaMemilikiRiwayatPenyakitTertent4 | Apakah Anda memiliki riwayat penyakit tertentu? | multiple_choice | true |  | Ya, Tidak |
+
+## Section 12: Data Diri Anggota Tim 1
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName3 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukSiswaNasionalNISN | Nomor Induk Siswa Nasional (NISN) | text | true |  |
+| 3 | EmailPribadiPersonalEmail3 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | IDLINELINEID3 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber3 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 13: Pendataan Konsumsi & Penyakit
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaYaTuliskanAlergiAtauPantanganYangAnd5 | Jika ya, tuliskan alergi atau pantangan yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+| 2 | JikaYaTuliskanRiwayatPenyakitYangAndaMil5 | Jika ya, tuliskan riwayat penyakit yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaSeorangVeganVegetarian5 | Apakah Anda seorang vegan/vegetarian? | multiple_choice | true |  | Ya, Tidak |
+| 4 | ApakahAndaMemilikiAlergiAtauPantanganTer5 | Apakah Anda memiliki alergi atau pantangan terhadap makanan? | multiple_choice | true |  | Ya, Tidak |
+| 5 | ApakahAndaMemilikiRiwayatPenyakitTertent5 | Apakah Anda memiliki riwayat penyakit tertentu? | multiple_choice | true |  | Ya, Tidak |
+
+## Section 14: Data Diri Anggota Tim 2
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName4 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukSiswaNasionalNISN2 | Nomor Induk Siswa Nasional (NISN) | text | true |  |
+| 3 | EmailPribadiPersonalEmail4 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | IDLINELINEID4 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber4 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 15: Pendataan Konsumsi & Penyakit
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaYaTuliskanAlergiAtauPantanganYangAnd6 | Jika ya, tuliskan alergi atau pantangan yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+| 2 | JikaYaTuliskanRiwayatPenyakitYangAndaMil6 | Jika ya, tuliskan riwayat penyakit yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaSeorangVeganVegetarian6 | Apakah Anda seorang vegan/vegetarian? | multiple_choice | true |  | Ya, Tidak |
+| 4 | ApakahAndaMemilikiAlergiAtauPantanganTer6 | Apakah Anda memiliki alergi atau pantangan terhadap makanan? | multiple_choice | true |  | Ya, Tidak |
+| 5 | ApakahAndaMemilikiRiwayatPenyakitTertent6 | Apakah Anda memiliki riwayat penyakit tertentu? | multiple_choice | true |  | Ya, Tidak |
+
+## Section 16: Data Diri Guru Pendamping
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaDanGelarFullNameAndTitle | Nama dan Gelar (Full Name and Title) | text | true | Contoh: Mussadiq Al Fahmi, S.Pd., M.Ak. |
+| 2 | JabatanPosition | Jabatan (Position) | text | true | Contoh: Guru Akuntansi/Wali Kelas/dll |
+| 3 | EmailPribadiPersonalEmail5 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | IDLINELINEID5 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber5 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 17: Pendataan Konsumsi & Penyakit
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaYaTuliskanAlergiAtauPantanganYangAnd7 | Jika ya, tuliskan alergi atau pantangan yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+| 2 | JikaYaTuliskanRiwayatPenyakitYangAndaMil7 | Jika ya, tuliskan riwayat penyakit yang Anda miliki | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaSeorangVeganVegetarian7 | Apakah Anda seorang vegan/vegetarian? | multiple_choice | true |  | Ya, Tidak |
+| 4 | ApakahAndaMemilikiAlergiAtauPantanganTer7 | Apakah Anda memiliki alergi atau pantangan terhadap makanan? | multiple_choice | true |  | Ya, Tidak |
+| 5 | ApakahAndaMemilikiRiwayatPenyakitTertent7 | Apakah Anda memiliki riwayat penyakit tertentu? | multiple_choice | true |  | Ya, Tidak |
+
+## Section 18: Pembayaran & Konfirmasi Data
+
+Harap melakukan pembayaran pendaftaran sesuai nominal ke rekening berikut:
+BCA 527 216 7664 A/N ELBERT H DAN KATRINA N
+
+Biaya Registrasi Ulang: Rp150.000
+
+Tambahkan angka 4 pada akhir nominal transfer sebagai kode unik
+(Contoh: Rp150.004)
+Format file: [Nama Tim_ACC BNAT XV_ Regist Ulang]
+
+Biaya pendaftaran yang telah dibayarkan tidak dapat dikembalikan dalam kondisi apa pun
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | BuktiUploadPembayaran | Bukti Upload Pembayaran | file | true |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 2 | KonfirmasiData | Konfirmasi Data | multiple_choice | true |  | Saya menyatakan bahwa data yang diisi telah sesuai dan benar |
+
+## Section 19: Pembayaran & Konfirmasi Data
+
+Harap melakukan pembayaran pendaftaran sesuai nominal ke rekening berikut:
+BCA 527 216 7664 A/N ELBERT H DAN KATRINA N
+
+Biaya Registrasi Ulang: Rp125.000
+
+Tambahkan angka 4 pada akhir nominal transfer sebagai kode unik
+(Contoh: Rp125.004)
+Format file: [Nama Tim_YAC BNAT XV_Regist Ulang]
+
+Biaya pendaftaran yang telah dibayarkan tidak dapat dikembalikan dalam kondisi apa pun
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | BuktiUploadPembayaran2 | Bukti Upload Pembayaran | file | true |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 2 | KonfirmasiData2 | Konfirmasi Data | multiple_choice | true |  | Saya menyatakan bahwa data yang diisi telah sesuai dan benar |
+
+## Section 20: Terima kasih atas pendaftaran Anda ✨
+
+Jika Anda mengalami kendala atau memiliki pertanyaan selama proses berlangsung, silahkan menghubungi contact person melalui WhatsApp atau LINE. Informasi dan pembaruan lebih lanjut akan dikirimkan ke email ketua tim setelah seluruh data registrasi diverifikasi oleh panitia.
+
+_Info-only section (tanpa field)._
+
+TIMELINE BNAT XV 2026
+
+Kegiatan
+Harga Tiket (Dasar + Fee Roetix)
+Timeline
+YAC Re-Registration (Top 15)
+Rp125.000 + Rp9.000
+1 Oktober - 3 Oktober
+ACC Re-Registration (Top 15)
+Rp150.000 + Rp10.000
+1 Oktober - 3 Oktober
+Talkshow "Beyond Numbers"
+Rp15.000–Rp25.000 + Rp3.500
+3 September - 20 September
+

@@ -1,0 +1,624 @@
+# RAW — Registrasi Talkshow BINUS National Accounting Tournament (BNAT) XV 2026
+
+Source: Google Form (diekstrak otomatis oleh `Tools/Extract_GForm.js`).
+
+> **Notes:**
+> - Tipe `email` / `phone` / `link` pada short-answer adalah TEBAKAN dari kata kunci judul — Google Form tidak menyimpannya kecuali panitia mengaktifkan validasi. Verifikasi manual.
+> - Baris ber-`TODO_REVIEW` di kolom Notes butuh keputusan manusia (checkbox multi-jawaban, grid, linear scale, tipe tak dikenal).
+
+## Deskripsi form (dari Google Form)
+
+📢 OPEN REGISTRATION BNAT XV 2026 TALKSHOW 📢
+
+[HIMPUNAN MAHASISWA AKUNTANSI BINUS UNIVERSITY PROUDLY PRESENTS]
+
+Calling All Future Risk Strategists ‼️📊
+Kondisi ekonomi dunia sangat sulit diprediksi di tengah ketegangan global, lalu bagaimana para profesional mengambil keputusan bisnis ketika dihadapi ketidakpastian? 🤔
+HIMA BINUS mempersembahkan talkshow dengan tema:
+
+💡 ” Beyond Numbers: Accounting Analysts in Times of Economic Volatility”
+
+Melalui talkshow ini, kamu akan memahami bagaimana para profesional memandang kondisi ekonomi saat ini, mengelola risiko di tengah ketidakpastian, serta peran akuntan modern dalam membantu perusahaan mengambil keputusan yang tepat di tengah volatilitas ekonomi.
+
+Pelaksanaan Talkshow
+📅 Tanggal: Rabu, 23 September 2026
+🕒 Waktu: 09.55 - 13.40 WIB
+📍 Lokasi: Auditorium B0501, BINUS @Alam Sutera & Zoom Cloud Meetings
+
+Daftarkan dirimu sekarang melalui:
+🔗 http://bit.ly/REGISTRASITALKSHOWBNATXV2026
+
+❗Close Registration: 14 September 2026︱23.59 WIB❗
+
+🎁 Benefits:
+📚 Knowledge
+⭐ SAT Points (BINUSIAN only)
+📜 E-Certificate
+
+☎️ Contact Person:
+👤 Jovieka Angelista Sugandi (Jovieka)
+WhatsApp: 0899-8150-020
+LINE: joviekaangelista
+
+👤 Valerie Regina Santiko (Valerie)
+WhatsApp: 0858-1310-3977
+LINE: jayylluv
+
+📲 Find us through:
+📸Instagram: @bnat.id @himabinus
+🎥 TikTok: @hima.binus
+▶️ YouTube: HIMA BINUS
+
+Upgrade your perspective, strengthen your analytical skills, and discover how accounting goes beyond numbers! 🚀
+
+HIMANIAC!!!
+Feel it, Trust it, and Get it!
+—————————————
+For more information:
+https://linktr.ee/himabinus
+
+#BNATXV2026 #HIMABINUS #AccountingCompetition #KompetisiNasional #LombaAkuntansi
+
+## Section 1: Registrasi Talkshow BINUS National Accounting Tournament (BNAT) XV 2026
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | TipePesertaParticipantType | Tipe Peserta (Participant Type) | multiple_choice | true | Harap diperhatikan bahwa Guru Pendamping YAC dikategorikan sebagai Peserta Umum | Youth Accounting Competition (YAC), Accounting Case Competition (ACC), Umum |
+
+## Section 2: Informasi Tim Accounting Case Competition (ACC)
+
+Harap diperhatikan bahwa tim yang berasal dari Tangerang, Tangerang Selatan, dan DKI Jakarta WAJIB mengirimkan dua anggota yang hadir secara onsite di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal).
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaTimTeamName | Nama Tim (Team Name) | text | true |  |
+| 2 | NamaUniversitasUniversityName | Nama Universitas (University Name) | text | true | Harap tidak menuliskan nama universitas dalam bentuk singkatan |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ProvinsiUniversitasUniversityProvince | Provinsi Universitas (University Province) | multiple_choice | true |  | Aceh, Sumatera Utara, Sumatera Barat, Riau, Kepulauan Riau, Jambi, Sumatera Selatan, Kepulauan Bangka Belitung, Bengkulu, Lampung, DKI Jakarta, Jawa Barat, Banten, Jawa Tengah, DI Yogyakarta, Jawa Timur, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Kalimantan Barat, Kalimantan Tengah, Kalimantan Selatan, Kalimantan Timur, Kalimantan Utara, Sulawesi Utara, Gorontalo, Sulawesi Tengah, Sulawesi Barat, Sulawesi Selatan, Sulawesi Tenggara, Maluku, Maluku Utara, Papua, Papua Barat, Papua Selatan, Papua Tengah, Papua Pegunungan, Papua Barat Daya |
+
+## Section 3: Data Diri Ketua Tim
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | LeaderNamaLengkapFullName | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | LeaderNomorIndukMahasiswaNIM | Nomor Induk Mahasiswa (NIM) | text | true |  |
+| 3 | LeaderEmailBINUSBINUSEmail | Email BINUS (BINUS Email) | email (?) | true | Hanya berlaku bagi BINUSIAN. Bagi Non-BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | LeaderEmailPribadiPersonalEmail | Email Pribadi (Personal Email) | email (?) | true | Hanya berlaku bagi Non-BINUSIAN. Bagi BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@gmail.com |
+| 5 | LeaderIDLINELINEID | ID LINE (LINE ID) | text | true |  |
+| 6 | LeaderNomorWhatsAppWhatsAppNumber | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 4: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh2 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true | Harap diperhatikan bahwa sesi talkshow dihitung sebagai bagian dari catatan kehadiran resmi tim Anda. | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir dan akan menyampaikan alasan saya kepada panitia |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow | Jika Anda tidak dapat menghadiri sesi talkshow, baik secara langsung maupun secara keseluruhan, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 5: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 6: Data Diri Anggota Tim 1
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM | Nomor Induk Mahasiswa (NIM) | text | true |  |
+| 3 | EmailBINUSBINUSEmail | Email BINUS (BINUS Email) | email (?) | true | Hanya berlaku bagi BINUSIAN. Bagi Non-BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | EmailPribadiPersonalEmail | Email Pribadi (Personal Email) | email (?) | true | Hanya berlaku bagi Non-BINUSIAN. Bagi BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@gmail.com |
+| 5 | IDLINELINEID | ID LINE (LINE ID) | text | true |  |
+| 6 | NomorWhatsAppWhatsAppNumber | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 7: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh3 | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh4 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se2 | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true | Harap diperhatikan bahwa sesi talkshow dihitung sebagai bagian dari catatan kehadiran resmi tim Anda. | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir dan akan menyampaikan alasan saya kepada panitia |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow2 | Jika Anda tidak dapat menghadiri sesi talkshow, baik secara langsung maupun secara keseluruhan, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 8: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk2 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn2 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB2 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd2 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 9: Data Diri Anggota Tim 2
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName2 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM2 | Nomor Induk Mahasiswa (NIM) | text | true |  |
+| 3 | EmailBINUSBINUSEmail2 | Email BINUS (BINUS Email) | email (?) | true | Hanya berlaku bagi BINUSIAN. Bagi Non-BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | EmailPribadiPersonalEmail2 | Email Pribadi (Personal Email) | email (?) | true | Hanya berlaku bagi Non-BINUSIAN. Bagi BINUSIAN, isi dengan tanda "-" Contoh: mussadiq.fahmi@gmail.com |
+| 5 | IDLINELINEID2 | ID LINE (LINE ID) | text | true |  |
+| 6 | NomorWhatsAppWhatsAppNumber2 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 10: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh5 | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh6 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se3 | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true | Harap diperhatikan bahwa sesi talkshow dihitung sebagai bagian dari catatan kehadiran resmi tim Anda. | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir dan akan menyampaikan alasan saya kepada panitia |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow3 | Jika Anda tidak dapat menghadiri sesi talkshow, baik secara langsung maupun secara keseluruhan, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 11: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk3 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn3 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB3 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd3 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 12: Informasi Tim Youth Accounting Competition (YAC)
+
+Harap diperhatikan bahwa tim yang berasal dari Tangerang, Tangerang Selatan, dan DKI Jakarta WAJIB mengirimkan dua anggota yang hadir secara onsite di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal).
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaTimTeamName2 | Nama Tim (Team Name) | text | true |  |
+| 2 | NamaSekolahSchoolName | Nama Sekolah (School Name) | text | true | Harap tidak menuliskan nama sekolah dalam bentuk singkatan |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ProvinsiSekolahSchoolProvince | Provinsi Sekolah (School Province) | multiple_choice | true |  | Aceh, Sumatera Utara, Sumatera Barat, Riau, Kepulauan Riau, Jambi, Sumatera Selatan, Kepulauan Bangka Belitung, Bengkulu, Lampung, DKI Jakarta, Jawa Barat, Banten, Jawa Tengah, DI Yogyakarta, Jawa Timur, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Kalimantan Barat, Kalimantan Tengah, Kalimantan Selatan, Kalimantan Timur, Kalimantan Utara, Sulawesi Utara, Gorontalo, Sulawesi Tengah, Sulawesi Barat, Sulawesi Selatan, Sulawesi Tenggara, Maluku, Maluku Utara, Papua, Papua Barat, Papua Selatan, Papua Tengah, Papua Pegunungan, Papua Barat Daya |
+
+## Section 13: Data Diri Ketua Tim
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | LeaderNamaLengkapFullName2 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | LeaderNomorIndukSiswaNasionalNISN | Nomor Induk Siswa Nasional (NISN) | text | true |  |
+| 3 | LeaderEmailPribadiPersonalEmail2 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | LeaderIDLINELINEID2 | ID LINE (LINE ID) | text | true |  |
+| 5 | LeaderNomorWhatsAppWhatsAppNumber2 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 14: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh7 | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh8 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se4 | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true | Harap diperhatikan bahwa sesi talkshow dihitung sebagai bagian dari catatan kehadiran resmi tim Anda. | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir dan akan menyampaikan alasan saya kepada panitia |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow4 | Jika Anda tidak dapat menghadiri sesi talkshow, baik secara langsung maupun secara keseluruhan, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 15: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk4 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn4 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB4 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd4 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 16: Data Diri Anggota Tim 1
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName3 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukSiswaNasionalNISN | Nomor Induk Siswa Nasional (NISN) | text | true |  |
+| 3 | EmailPribadiPersonalEmail3 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | IDLINELINEID3 | ID LINE (LINE ID) | text | false |  |
+| 5 | NomorWhatsAppWhatsAppNumber3 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 17: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh9 | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh10 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se5 | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true | Harap diperhatikan bahwa sesi talkshow dihitung sebagai bagian dari catatan kehadiran resmi tim Anda. | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir dan akan menyampaikan alasan saya kepada panitia |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow5 | Jika Anda tidak dapat menghadiri sesi talkshow, baik secara langsung maupun secara keseluruhan, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 18: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk5 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn5 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB5 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd5 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 19: Data Diri Anggota Tim 2
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName4 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukSiswaNasionalNISN2 | Nomor Induk Siswa Nasional (NISN) | text | true |  |
+| 3 | EmailPribadiPersonalEmail4 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | IDLINELINEID4 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber4 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 20: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh11 | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh12 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se6 | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true | Harap diperhatikan bahwa sesi talkshow dihitung sebagai bagian dari catatan kehadiran resmi tim Anda. | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir dan akan menyampaikan alasan saya kepada panitia |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow6 | Jika Anda tidak dapat menghadiri sesi talkshow, baik secara langsung maupun secara keseluruhan, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 21: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk6 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn6 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB6 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd6 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 22: Informasi Peserta Umum
+
+Harap diperhatikan bagi BINUSIAN @Alam Sutera, Non-BINUSIAN, dan Guru Pendamping YAC WAJIB hadir secara langsung (onsite) di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal).
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaReferralReferralName | Nama Referral (Referral Name) | text | true | Jika tidak ada, isi dengan tanda "-" |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 2 | KategoriPesertaUmumGeneralParticipantCat | Kategori Peserta Umum (General Participant Category) | multiple_choice | true |  | BINUSIAN, Non-BINUSIAN, Guru Pendamping YAC |
+
+## Section 23: Data Diri Peserta Umum - BINUSIAN 1
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName5 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM3 | Nomor Induk Mahasiswa (NIM) | text | true | Contoh: 2902713035 |
+| 3 | EmailBINUSBINUSEmail3 | Email BINUS (BINUS Email) | email (?) | true | Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | IDLINELINEID5 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber5 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 6 | AreaKampusCampusArea | Area Kampus (Campus Area) | multiple_choice | true |  | Kemanggisan, Alam Sutera, Bekasi, Senayan, Bandung, Malang, Semarang, BINUS Online |
+| 7 | FakultasFaculty | Fakultas (Faculty) | multiple_choice | true |  | School of Accounting, School of Computer Science, School of Design, School of Information Systems, Faculty of Digital Communication and Hotel and Tourism, Faculty of Engineering, Faculty of Humanities, BINUS Business School |
+
+## Section 24: School of Accounting
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor | Jurusan (Major) | multiple_choice | true |  | Accounting, Accounting Technology, Accounting and Information Systems, International Accounting and Finance, Finance, Taxation |
+
+## Section 25: School of Computer Science
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor2 | Jurusan (Major) | multiple_choice | true |  | Artificial Intelligence, Computer Science, Computer Science - Global Class, Computer Science Software Engineering, Cyber Security, Data Science, Game Application and Technology, Mobile Application and Technology |
+
+## Section 26: School of Design
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor3 | Jurusan (Major) | multiple_choice | true |  | Fashion, Film, Interior Design, Visual Communication Design, Visual Communication Design - Animation, Visual Communication Design - Creative Advertising, Visual Communication Design - New Media |
+
+## Section 27: School of Information Systems
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor4 | Jurusan (Major) | multiple_choice | true |  | Business Analytics, Business Information Technology, Information Systems, Information Systems Accounting and Editing |
+
+## Section 28: Faculty of Digital Communication and Hotel and Tourism
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor5 | Jurusan (Major) | multiple_choice | true |  | Business Hotel Management, Communication - Marketing Communication, Creative Communication, Digital Communication, Digital Media Communication, Event and Travel Business, Hotel Management, Marketing Communication, Mass Communication, Public Relations |
+
+## Section 29: Faculty of Engineering
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor6 | Jurusan (Major) | multiple_choice | true |  | Architecture, Biotechnology, Civil Engineering, Computer Engineering, Food Technology, Industrial Engineering, Professional Engineer, Smart Industrial Engineering |
+
+## Section 30: Faculty of Humanities
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor7 | Jurusan (Major) | multiple_choice | true |  | Creative Digital English, Digital Psychology, Global Business Chinese, International Relations, International Relations - Global Class, Japanese Popular Culture, Law - Business Law, Primary Teacher Education, Psychology |
+
+## Section 31: BINUS Business School
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor8 | Jurusan (Major) | multiple_choice | true |  | Business Creation, Business Management, Business Management and Marketing, Creativepreneurship, Digital Business, Digital Business Innovation, Entrepreneurship - Business Creation, Global Business Marketing, International Business, International Business Management, International Trade, Management |
+
+## Section 32: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh13 | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh14 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se7 | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true |  | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow7 | Jika Anda tidak dapat menghadiri sesi talkshow secara langsung, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 33: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk7 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn7 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB7 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd7 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 34: Pembelian Bundle
+
+Pembelian paket bundle untuk dua peserta akan mendapatkan potongan sebesar 40% dari harga normal. Kedua peserta dalam satu paket bundle harus berasal dari kategori yang sama, yaitu sama-sama BINUSIAN atau sama-sama Non-BINUSIAN.
+
+Info harga Registrasi Talkshow - normal: Rp15.000
+Info harga Registrasi Talkshow - bundle: Rp25.000
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | PembelianBundleBundlePurchase | Pembelian Bundle (Bundle Purchase) | multiple_choice | true |  | Ya, Tidak |
+
+## Section 35: Data Diri Peserta Umum - BINUSIAN 2
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName6 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM4 | Nomor Induk Mahasiswa (NIM) | text | true | Contoh: 2902713035 |
+| 3 | EmailBINUSBINUSEmail4 | Email BINUS (BINUS Email) | email (?) | true | Contoh: mussadiq.fahmi@binus.ac.id |
+| 4 | IDLINELINEID6 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber6 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 6 | AreaKampusCampusArea2 | Area Kampus (Campus Area) | multiple_choice | true |  | Kemanggisan, Alam Sutera, Bekasi, Senayan, Bandung, Malang, Semarang, BINUS Online |
+| 7 | FakultasFaculty2 | Fakultas (Faculty) | multiple_choice | true |  | School of Accounting, School of Computer Science, School of Design, School of Information Systems, Faculty of Digital Communication and Hotel and Tourism, Faculty of Engineering, Faculty of Humanities, BINUS Business School |
+
+## Section 36: School of Accounting
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor9 | Jurusan (Major) | multiple_choice | true |  | Accounting, Accounting Technology, Accounting and Information Systems, International Accounting and Finance, Finance, Taxation |
+
+## Section 37: School of Computer Science
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor10 | Jurusan (Major) | multiple_choice | true |  | Artificial Intelligence, Computer Science, Computer Science - Global Class, Computer Science Software Engineering, Cyber Security, Data Science, Game Application and Technology, Mobile Application and Technology |
+
+## Section 38: School of Design
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor11 | Jurusan (Major) | multiple_choice | true |  | Fashion, Film, Interior Design, Visual Communication Design, Visual Communication Design - Animation, Visual Communication Design - Creative Advertising, Visual Communication Design - New Media |
+
+## Section 39: School of Information Systems
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor12 | Jurusan (Major) | multiple_choice | true |  | Business Analytics, Business Information Technology, Information Systems, Information Systems Accounting and Editing |
+
+## Section 40: Faculty of Digital Communication and Hotel and Tourism
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor13 | Jurusan (Major) | multiple_choice | true |  | Business Hotel Management, Communication - Marketing Communication, Creative Communication, Digital Communication, Digital Media Communication, Event and Travel Business, Hotel Management, Marketing Communication, Mass Communication, Public Relations |
+
+## Section 41: Faculty of Engineering
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor14 | Jurusan (Major) | multiple_choice | true |  | Architecture, Biotechnology, Civil Engineering, Computer Engineering, Food Technology, Industrial Engineering, Professional Engineer, Smart Industrial Engineering |
+
+## Section 42: Faculty of Humanities
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor15 | Jurusan (Major) | multiple_choice | true |  | Creative Digital English, Digital Psychology, Global Business Chinese, International Relations, International Relations - Global Class, Japanese Popular Culture, Law - Business Law, Primary Teacher Education, Psychology |
+
+## Section 43: BINUS Business School
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | JurusanMajor16 | Jurusan (Major) | multiple_choice | true |  | Business Creation, Business Management, Business Management and Marketing, Creativepreneurship, Digital Business, Digital Business Innovation, Entrepreneurship - Business Creation, Global Business Marketing, International Business, International Business Management, International Trade, Management |
+
+## Section 44: Informasi Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaTidakDapatHadirSecaraLangsungMoh15 | Jika Anda tidak dapat hadir secara langsung, mohon jelaskan alasannya | text | true | Jika Anda dapat hadir secara langsung, isi dengan tanda "-" |
+| 2 | JikaAndaTidakDapatHadirSecaraLangsungMoh16 | Jika Anda tidak dapat hadir secara langsung, mohon unggah bukti pendukung yang dimiliki | file | false |  |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanMenghadiriTalkshowPada23Se8 | Apakah Anda akan menghadiri talkshow pada 23 September 2026 di BINUS @Alam Sutera? | multiple_choice | true |  | Ya, saya akan hadir secara langsung di BINUS @Alam Sutera (termasuk kemungkinan datang terlambat dan pulang lebih awal), Saya tidak dapat hadir secara langsung karena berasal dari luar JABODETABEK dan akan bergabung secara online, Saya tidak dapat hadir secara langsung meskipun berasal dari dalam JABODETABEK dan akan bergabung secara online |
+| 4 | JikaAndaTidakDapatMenghadiriSesiTalkshow8 | Jika Anda tidak dapat menghadiri sesi talkshow secara langsung, mohon hubungi panitia untuk melakukan konfirmasi | multiple_choice | false | ☎️ Contact Person: 👤 Jovieka Angelista Sugandi (Jovieka) WhatsApp: 0899-8150-020 LINE: joviekaangelista 👤 Valerie Regina Santiko (Valerie) WhatsApp: 0858-1310-3977 LINE: jayylluv | Ya, saya sudah menghubungi panitia |
+
+## Section 45: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk8 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn8 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB8 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd8 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 46: Data Diri Peserta Umum - Non-BINUSIAN 1
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName7 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM5 | Nomor Induk Mahasiswa (NIM) | text | true | Bagi non mahasiswa/i, isi dengan tanda "-" |
+| 3 | EmailPribadiPersonalEmail5 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | IDLINELINEID7 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber7 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 47: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk9 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn9 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB9 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd9 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 48: Pembelian Bundle
+
+Pembelian paket bundle untuk dua peserta akan mendapatkan potongan sebesar 40% dari harga normal. Kedua peserta dalam satu paket bundle harus berasal dari kategori yang sama, yaitu sama-sama BINUSIAN atau sama-sama Non-BINUSIAN.
+
+Info harga Registrasi Talkshow - normal: Rp15.000
+Info harga Registrasi Talkshow - bundle: Rp25.000
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | PembelianBundleBundlePurchase2 | Pembelian Bundle (Bundle Purchase) | multiple_choice | true |  | Ya, Tidak |
+
+## Section 49: Data Diri Peserta Umum - Non-BINUSIAN 2
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaLengkapFullName8 | Nama Lengkap (Full Name) | text | true | Contoh: Mussadiq Al Fahmi |
+| 2 | NomorIndukMahasiswaNIM6 | Nomor Induk Mahasiswa (NIM) | text | true | Bagi non mahasiswa/i, isi dengan tanda "-" |
+| 3 | EmailPribadiPersonalEmail6 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 4 | IDLINELINEID8 | ID LINE (LINE ID) | text | true |  |
+| 5 | NomorWhatsAppWhatsAppNumber8 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 50: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk10 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn10 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB10 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd10 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 51: Data Diri Guru Pendamping
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | NamaSekolahSchoolName2 | Nama Sekolah (School Name) | text | true | Harap tidak menuliskan nama sekolah dalam bentuk singkatan |
+| 2 | NamaDanGelarFullNameAndTitle | Nama dan Gelar (Full Name and Title) | text | true | Contoh: Mussadiq Al Fahmi, S.Pd., M.Ak. |
+| 3 | JabatanPosition | Jabatan (Position) | text | true | Contoh: Guru Akuntansi/Wali Kelas/dll |
+| 4 | EmailPribadiPersonalEmail7 | Email Pribadi (Personal Email) | email (?) | true | Contoh: mussadiq.fahmi@gmail.com |
+| 5 | IDLINELINEID9 | ID LINE (LINE ID) | text | true |  |
+| 6 | NomorWhatsAppWhatsAppNumber9 | Nomor WhatsApp (WhatsApp Number) | phone (?) | true | Contoh: 085801016922 |
+
+## Section 52: Waktu Kehadiran
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | JikaAndaDatangTerlambatPukulBerapaAndaAk11 | Jika Anda datang terlambat, pukul berapa Anda akan tiba? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+| 2 | JikaAndaAkanPulangLebihAwalPukulBerapaAn11 | Jika Anda akan pulang lebih awal, pukul berapa Anda akan pulang? | text (?) | false | TODO_REVIEW: GForm time - New Admin UI tidak punya tipe time |
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 3 | ApakahAndaAkanTibaTepatWaktuPada0955WIB11 | Apakah Anda akan tiba tepat waktu pada 09.55 WIB? | multiple_choice | true |  | Ya, saya akan tiba tepat waktu pada pukul 09.55 WIB, Tidak, saya akan datang terlambat |
+| 4 | JikaAndaAkanMenghadiriSesiPukulBerapaAnd11 | Jika Anda akan menghadiri sesi, pukul berapa Anda akan meninggalkan sesi? | multiple_choice | true |  | Saya akan pulang setelah sesi berakhir, Saya akan pulang lebih awal |
+
+## Section 53: Pembayaran
+
+Harap melakukan pembayaran pendaftaran sesuai nominal ke rekening berikut:
+BCA 527 216 7664 A/N ELBERT H DAN KATRINA N
+
+Info harga Registrasi Talkshow - normal: Rp15.000
+Info harga Registrasi Talkshow - bundle: Rp25.000
+
+Tambahkan angka 6 pada akhir nominal transfer sebagai kode unik
+(Contoh: Rp15.006)
+Format file: [Nama Lengkap_BNAT XV_Regist Talkshow]
+
+Biaya pendaftaran yang telah dibayarkan tidak dapat dikembalikan dalam kondisi apa pun
+
+| # | Key | Label | Type | Required | Notes |
+|---|-----|-------|------|----------|-------|
+| 1 | BuktiUploadPembayaran | Bukti Upload Pembayaran | file | true |  |
+
+## Section 54: Bergabung ke Grup WhatsApp & Konfirmasi Data
+
+Seluruh informasi mengenai rangkaian acara, pengumuman, dan pembaruan akan disampaikan melalui Grup WhatsApp. Oleh karena itu, setiap peserta wajib bergabung ke Grup WhatsApp.
+
+Berikut tautan Grup WhatsApp: Grup WhatsApp Talkshow BNAT XV 2026
+
+| # | Key | Label | Type | Required | Notes | Options |
+|---|-----|-------|------|----------|-------|---------|
+| 1 | BergabungKeGrupWhatsAppJoinTheWhatsAppGr | Bergabung ke Grup WhatsApp (Join the WhatsApp Group) | multiple_choice | true |  | Saya sudah bergabung ke Grup WhatsApp |
+| 2 | KonfirmasiData | Konfirmasi Data | multiple_choice | true |  | Saya menyatakan bahwa data yang diisi telah sesuai dan benar |
+
+## Section 55: Terima kasih atas pendaftaran Anda ✨
+
+Jika Anda mengalami kendala atau memiliki pertanyaan selama proses berlangsung, silahkan menghubungi contact person melalui WhatsApp atau LINE. Informasi dan pembaruan lebih lanjut akan dikirimkan melalui grup WhatsApp.
+
+_Info-only section (tanpa field)._
+
+TIMELINE BNAT XV 2026
+
+Kegiatan
+Harga Tiket (Dasar + Fee Roetix)
+Timeline
+YAC Re-Registration (Top 15)
+Rp125.000 + Rp9.000
+1 Oktober - 3 Oktober
+ACC Re-Registration (Top 15)
+Rp150.000 + Rp10.000
+1 Oktober - 3 Oktober
+Talkshow "Beyond Numbers"
+Rp15.000–Rp25.000 + Rp3.500
+3 September - 20 September

@@ -22,15 +22,14 @@
 //      ternyata berbayar, isi HARGA_PESERTA + FEE_ROETIX dan tentukan dulu skemanya:
 //        ON-TOP (PORFIS/COMMSPACE/SRD/UISP): price = harga panitia, fee ditambahkan -> peserta bayar price + fee
 //        INKLUSIF (SilverParade/LUMINUX):    price = harga poster - fee -> peserta bayar persis harga poster
-//   b. TANGGAL PENDAFTARAN. RAW cuma memuat tanggal ACARA (Rabu, 23 September 2026, 08.00 - selesai),
-//      tidak ada tanggal buka/tutup pendaftaran. PHASE & TIMELINE di bawah DIASUMSIKAN
-//      3 - 21 September 2026 (tutup 2 hari sebelum acara). Ganti dengan tanggal resmi panitia.
-//   c. LINK GRUP WHATSAPP. RAW menulis "[Insert Link Group WA] (Link soon)" - panitia belum punya
-//      linknya. Di COMPLETION_MESSAGE masih placeholder, DAN ini langkah wajib peserta ("IMPORTANT
-//      NEXT STEP"), jadi harus diisi sebelum event dipublikasikan.
-//   d. LINK SYARAT PENDAFTARAN. RAW menulis "Tagging 3 friends in (link soon)" dan "Reposting to
-//      story (link soon)" - link poster Open Registration-nya juga belum ada. Masih placeholder di
-//      description Section "Registration Requirements".
+//   b. TANGGAL PENDAFTARAN - SUDAH DIKONFIRMASI PANITIA (2026-09-03): Open Registration
+//      7 - 20 September 2026. Bukan lagi asumsi. (Acara sendiri Rabu, 23 September 2026.)
+//   c. LINK GRUP WHATSAPP - MASIH BELUM ADA. Ditanyakan ke panitia 2026-09-03, jawabannya "-"
+//      (belum tersedia). Di COMPLETION_MESSAGE masih placeholder, DAN ini langkah wajib peserta
+//      ("IMPORTANT NEXT STEP"), jadi harus diisi sebelum event dipublikasikan. Tagih ke panitia.
+//   d. LINK FEEDS INSTAGRAM (untuk syarat Tag 3 orang & Repost story) - MASIH BELUM ADA. Ditanyakan
+//      ke panitia 2026-09-03, jawabannya "-" (belum tersedia). Masih placeholder di description
+//      Section "Registration Requirements". Tagih ke panitia.
 //
 // KEPUTUSAN atas sumber (didokumentasikan, bukan diam-diam):
 //   1. Section 2 dan Section 3 di RAW DIGABUNG jadi satu section "Participant Information". Keduanya
@@ -103,9 +102,9 @@ var IDENTITY = {
   description: EVENT_DESCRIPTION
 };
 
-// ASUMSI - lihat catatan (b) di header. RAW hanya punya tanggal ACARA, bukan tanggal pendaftaran.
-var PHASE = { name: 'Registration', start: '2026-09-03T00:00', end: '2026-09-21T23:59' };
-var TIMELINE = { name: 'Registration', start: '2026-09-03T00:00', end: '2026-09-21T23:59' };
+// Dikonfirmasi panitia 2026-09-03: Open Registration 7 - 20 September 2026.
+var PHASE = { name: 'Open Registration', start: '2026-09-07T00:00', end: '2026-09-20T23:59' };
+var TIMELINE = { name: 'Open Registration', start: '2026-09-07T00:00', end: '2026-09-20T23:59' };
 
 // GRATIS - lihat catatan (a) di header. RAW tidak menyebut biaya sama sekali; angka 0 dipakai supaya
 // tidak ada harga karangan yang lolos ke produksi. Kalau berbayar, tentukan dulu skema on-top vs
@@ -142,8 +141,8 @@ var COMPLETION_MESSAGE = [
 var REQUIREMENTS_TEXT = [
   'Please upload the screenshots of your proof of requirements:',
   '1. Following the Instagram account of INFAIR: https://www.instagram.com/industrialfair/',
-  '2. Tagging 3 friends on the Open Registration Poster (TODO - link poster belum tersedia)',
-  '3. Reposting the Open Registration Poster to your story (TODO - link poster belum tersedia)'
+  '2. Tagging 3 friends on the Open Registration Poster (TODO - link feeds Instagram belum tersedia)',
+  '3. Reposting the Open Registration Poster to your story (TODO - link feeds Instagram belum tersedia)'
 ].join('\n');
 
 // Urutan field mengikuti RAW_Context_GrandSeminar.txt; Section 2 + 3 digabung (lihat keputusan 1).
@@ -454,7 +453,7 @@ async function reportReview() {
     ? '%cREADY -> "Everything looks good." Cek dulu: ' + TOTAL_FIELDS + ' field, ' + SECTIONS.length + ' section, 1 Phase, 1 Timeline, harga ' + hargaTeks + '.'
     : '%cNOT READY -> baca pesan "Not ready to finish - missing: ..." di layar. Kalau ada key ber-suffix "_2", berarti draft event sebelumnya belum dibersihkan: localStorage.removeItem(\'roetix:competition-draft\'); location.reload();',
     'color:' + (ready ? '#22c55e' : '#ef4444') + ';font-weight:bold;font-size:13px');
-  console.warn('%cSEBELUM KLIK "Create event" - 4 data ini TIDAK ADA di RAW dan masih placeholder: (1) HARGA di-set gratis, konfirmasi ke panitia berbayar atau tidak; (2) tanggal pendaftaran 3 - 21 Sep 2026 masih ASUMSI (RAW cuma punya tanggal acara 23 Sep); (3) link grup WhatsApp di Completion message masih TODO padahal itu langkah WAJIB peserta; (4) link poster Open Registration untuk syarat tag & repost masih TODO. Plus: upload banner event di Step 1.', 'color:#f59e0b;font-weight:bold');
+  console.warn('%cSEBELUM KLIK "Create event" - 4 data ini TIDAK ADA di RAW dan masih placeholder: (1) HARGA di-set gratis, konfirmasi ke panitia berbayar atau tidak; (2) link grup WhatsApp di Completion message masih TODO padahal itu langkah WAJIB peserta - panitia bilang belum tersedia per 2026-09-03; (3) link feeds Instagram untuk syarat tag & repost masih TODO - panitia bilang belum tersedia per 2026-09-03. Tanggal pendaftaran 7 - 20 Sep 2026 sudah dikonfirmasi panitia. Plus: upload banner event di Step 1.', 'color:#f59e0b;font-weight:bold');
 }
 
 // ===================== RUN =====================
